@@ -1,0 +1,8 @@
+D:\AspNetCoreStudy\Pomelo\Pomelo.Common\bin\Debug\netstandard2.0\Pomelo.Common.deps.json
+D:\AspNetCoreStudy\Pomelo\Pomelo.Common\bin\Debug\netstandard2.0\Pomelo.Common.dll
+D:\AspNetCoreStudy\Pomelo\Pomelo.Common\bin\Debug\netstandard2.0\Pomelo.Common.pdb
+D:\AspNetCoreStudy\Pomelo\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.csproj.CoreCompileInputs.cache
+D:\AspNetCoreStudy\Pomelo\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.AssemblyInfoInputs.cache
+D:\AspNetCoreStudy\Pomelo\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.AssemblyInfo.cs
+D:\AspNetCoreStudy\Pomelo\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.dll
+D:\AspNetCoreStudy\Pomelo\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.pdb

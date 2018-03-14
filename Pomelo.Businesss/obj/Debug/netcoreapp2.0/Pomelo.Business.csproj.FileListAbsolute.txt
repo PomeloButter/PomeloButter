@@ -1,0 +1,14 @@
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\obj\Debug\netcoreapp2.0\Pomelo.Business.csproj.CoreCompileInputs.cache
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\obj\Debug\netcoreapp2.0\Pomelo.Business.AssemblyInfoInputs.cache
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\obj\Debug\netcoreapp2.0\Pomelo.Business.AssemblyInfo.cs
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\bin\Debug\netcoreapp2.0\Pomelo.Business.deps.json
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\bin\Debug\netcoreapp2.0\Pomelo.Business.dll
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\bin\Debug\netcoreapp2.0\Pomelo.Business.pdb
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\bin\Debug\netcoreapp2.0\Pomelo.IBusiness.dll
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\bin\Debug\netcoreapp2.0\Pomelo.IRepository.dll
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\bin\Debug\netcoreapp2.0\Pomelo.Model.dll
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\bin\Debug\netcoreapp2.0\Pomelo.IBusiness.pdb
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\bin\Debug\netcoreapp2.0\Pomelo.IRepository.pdb
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\bin\Debug\netcoreapp2.0\Pomelo.Model.pdb
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\obj\Debug\netcoreapp2.0\Pomelo.Business.dll
+D:\AspNetCoreStudy\Pomelo\Pomelo.Businesss\obj\Debug\netcoreapp2.0\Pomelo.Business.pdb

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.4" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.10-rc" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pomelo.IRepositorys\Pomelo.IRepository.csproj" />
+    <ProjectReference Include="..\Pomelo.Models\Pomelo.Model.csproj" />
+  </ItemGroup>
+
+</Project>

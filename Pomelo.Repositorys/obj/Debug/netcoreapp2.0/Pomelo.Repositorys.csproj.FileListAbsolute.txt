@@ -1,0 +1,6 @@
+D:\AspNetCoreStudy\Pomelo\Pomelo.Repositorys\bin\Debug\netcoreapp2.0\Pomelo.IRepositorys.dll
+D:\AspNetCoreStudy\Pomelo\Pomelo.Repositorys\bin\Debug\netcoreapp2.0\Pomelo.Models.dll
+D:\AspNetCoreStudy\Pomelo\Pomelo.Repositorys\obj\Debug\netcoreapp2.0\Pomelo.Repositorys.csprojResolveAssemblyReference.cache
+D:\AspNetCoreStudy\Pomelo\Pomelo.Repositorys\obj\Debug\netcoreapp2.0\Pomelo.Repositorys.csproj.CoreCompileInputs.cache
+D:\AspNetCoreStudy\Pomelo\Pomelo.Repositorys\obj\Debug\netcoreapp2.0\Pomelo.Repositorys.AssemblyInfoInputs.cache
+D:\AspNetCoreStudy\Pomelo\Pomelo.Repositorys\obj\Debug\netcoreapp2.0\Pomelo.Repositorys.AssemblyInfo.cs

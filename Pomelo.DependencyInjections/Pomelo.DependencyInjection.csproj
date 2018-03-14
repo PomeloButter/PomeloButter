@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pomelo.Businesss\Pomelo.Business.csproj" />
+    <ProjectReference Include="..\Pomelo.IBusinesss\Pomelo.IBusiness.csproj" />
+    <ProjectReference Include="..\Pomelo.IRepositorys\Pomelo.IRepository.csproj" />
+    <ProjectReference Include="..\Pomelo.Repositorys\Pomelo.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
