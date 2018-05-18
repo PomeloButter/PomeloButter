@@ -45,7 +45,7 @@ namespace Pomelo.Business
         /// <param name="id">主键Id</param>
         /// <param name="connectionString">链接字符串</param>
         /// <returns></returns>
-        public bool DeleteEntityById(int id, string connectionString = null)
+        public bool DeleteEntityById(string id, string connectionString = null)
         {
             return iUserRepository.DeleteEntityById(id, connectionString);
         }
@@ -66,7 +66,7 @@ namespace Pomelo.Business
         /// <param name="id">主键Id</param>
         /// <param name="connectionString">链接字符串</param>
         /// <returns></returns>
-        public User RetriveOneEntityById(int id, string connectionString = null)
+        public User RetriveOneEntityById(string id, string connectionString = null)
         {
             return iUserRepository.RetriveOneEntityById(id, connectionString);
         }

@@ -30,7 +30,7 @@ namespace Pomelo.IRepository
         /// <param name="id">主键Id</param>
         /// <param name="connectionString">链接字符串</param>
         /// <returns></returns>
-        T RetriveOneEntityById(int id, string connectionString = null);
+        T RetriveOneEntityById(string id, string connectionString = null);
 
         /// <summary>
         /// 获取所有实体
@@ -53,6 +53,6 @@ namespace Pomelo.IRepository
         /// <param name="id">主键Id</param>
         /// <param name="connectionString">链接字符串</param>
         /// <returns></returns>
-        bool DeleteEntityById(int id, string connectionString = null);
+        bool DeleteEntityById(string id, string connectionString = null);
     }
 }

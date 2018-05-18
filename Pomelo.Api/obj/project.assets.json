@@ -12356,7 +12356,7 @@
       ]
     },
     "System.Text.Encoding.CodePages/4.4.0": {
-      "sha512": "6JX7ZdaceBiLKLkYt8zJcp4xTJd1uYyXXEkPw6mnlUIjh1gZPIVKPtRXPmY5kLf6DwZmf5YLwR3QUrRonl7l0A==",
+      "sha512": "PquVDKKu7d/d1A5ebmW5u8HjR31XBbCiY5dIUBMi4WBKXD8sqUyvshgBMek5qmSbBcX2Th35jOqQLDNuXAOnsg==",
       "type": "package",
       "path": "system.text.encoding.codepages/4.4.0",
       "files": [
@@ -13291,40 +13291,43 @@
     },
     "Pomelo.Business/1.0.0": {
       "type": "project",
-      "path": "../Pomelo.Businesss/Pomelo.Business.csproj",
-      "msbuildProject": "../Pomelo.Businesss/Pomelo.Business.csproj"
+      "path": "../Pomelo.Business/Pomelo.Business.csproj",
+      "msbuildProject": "../Pomelo.Business/Pomelo.Business.csproj"
     },
     "Pomelo.DependencyInjection/1.0.0": {
       "type": "project",
-      "path": "../Pomelo.DependencyInjections/Pomelo.DependencyInjection.csproj",
-      "msbuildProject": "../Pomelo.DependencyInjections/Pomelo.DependencyInjection.csproj"
+      "path": "../Pomelo.DependencyInjection/Pomelo.DependencyInjection.csproj",
+      "msbuildProject": "../Pomelo.DependencyInjection/Pomelo.DependencyInjection.csproj"
     },
     "Pomelo.IBusiness/1.0.0": {
       "type": "project",
-      "path": "../Pomelo.IBusinesss/Pomelo.IBusiness.csproj",
-      "msbuildProject": "../Pomelo.IBusinesss/Pomelo.IBusiness.csproj"
+      "path": "../Pomelo.IBusiness/Pomelo.IBusiness.csproj",
+      "msbuildProject": "../Pomelo.IBusiness/Pomelo.IBusiness.csproj"
     },
     "Pomelo.IRepository/1.0.0": {
       "type": "project",
-      "path": "../Pomelo.IRepositorys/Pomelo.IRepository.csproj",
-      "msbuildProject": "../Pomelo.IRepositorys/Pomelo.IRepository.csproj"
+      "path": "../Pomelo.IRepository/Pomelo.IRepository.csproj",
+      "msbuildProject": "../Pomelo.IRepository/Pomelo.IRepository.csproj"
     },
     "Pomelo.Model/1.0.0": {
       "type": "project",
-      "path": "../Pomelo.Models/Pomelo.Model.csproj",
-      "msbuildProject": "../Pomelo.Models/Pomelo.Model.csproj"
+      "path": "../Pomelo.Model/Pomelo.Model.csproj",
+      "msbuildProject": "../Pomelo.Model/Pomelo.Model.csproj"
     },
     "Pomelo.Repository/1.0.0": {
       "type": "project",
-      "path": "../Pomelo.Repositorys/Pomelo.Repository.csproj",
-      "msbuildProject": "../Pomelo.Repositorys/Pomelo.Repository.csproj"
+      "path": "../Pomelo.Repository/Pomelo.Repository.csproj",
+      "msbuildProject": "../Pomelo.Repository/Pomelo.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.3",
       "Microsoft.NETCore.App >= 2.0.0",
+      "Pomelo.Business >= 1.0.0",
       "Pomelo.DependencyInjection >= 1.0.0",
+      "Pomelo.IBusiness >= 1.0.0",
+      "Pomelo.Model >= 1.0.0",
       "Swashbuckle.AspNetCore >= 2.3.0"
     ]
   },
@@ -13334,12 +13337,15 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "D:\\AspNetCoreStudy\\Pomelo\\Pomelo.Api\\Pomelo.Api.csproj",
+      "projectUniqueName": "D:\\pomeloButter\\Pomelo.Api\\Pomelo.Api.csproj",
       "projectName": "Pomelo.Api",
-      "projectPath": "D:\\AspNetCoreStudy\\Pomelo\\Pomelo.Api\\Pomelo.Api.csproj",
+      "projectPath": "D:\\pomeloButter\\Pomelo.Api\\Pomelo.Api.csproj",
       "packagesPath": "C:\\Users\\colin.ji\\.nuget\\packages\\",
-      "outputPath": "D:\\AspNetCoreStudy\\Pomelo\\Pomelo.Api\\obj\\",
+      "outputPath": "D:\\pomeloButter\\Pomelo.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13359,8 +13365,17 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\AspNetCoreStudy\\Pomelo\\Pomelo.DependencyInjections\\Pomelo.DependencyInjection.csproj": {
-              "projectPath": "D:\\AspNetCoreStudy\\Pomelo\\Pomelo.DependencyInjections\\Pomelo.DependencyInjection.csproj"
+            "D:\\pomeloButter\\Pomelo.IBusiness\\Pomelo.IBusiness.csproj": {
+              "projectPath": "D:\\pomeloButter\\Pomelo.IBusiness\\Pomelo.IBusiness.csproj"
+            },
+            "D:\\pomeloButter\\Pomelo.Model\\Pomelo.Model.csproj": {
+              "projectPath": "D:\\pomeloButter\\Pomelo.Model\\Pomelo.Model.csproj"
+            },
+            "D:\\pomeloButter\\Pomelo.Business\\Pomelo.Business.csproj": {
+              "projectPath": "D:\\pomeloButter\\Pomelo.Business\\Pomelo.Business.csproj"
+            },
+            "D:\\pomeloButter\\Pomelo.DependencyInjection\\Pomelo.DependencyInjection.csproj": {
+              "projectPath": "D:\\pomeloButter\\Pomelo.DependencyInjection\\Pomelo.DependencyInjection.csproj"
             }
           }
         }
@@ -13374,19 +13389,18 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "[2.0.3, )"
-          },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.0, )",
+            "version": "2.0",
             "autoReferenced": true
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "[2.3.0, )"
+            "version": "2.3.0"
+          },
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "2.0.3"
           }
         },
         "imports": [

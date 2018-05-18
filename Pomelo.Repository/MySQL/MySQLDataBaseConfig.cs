@@ -4,26 +4,25 @@ namespace Pomelo.Repository.MySQL
     /// <summary>
     /// MySQL的数据库配置
     /// </summary>
-    public class MySQLDataBaseConfig
+    public static class MySqlDataBaseConfig
     {
         /// <summary>
-        /// 默认的Sql Server的链接字符串
+        /// 默认的MYSQL的链接字符串
         /// </summary>
-        private const string DefaultMySqlConnectionString = "server=localhost;userid=root;pwd=Meta123$%^;port=3306;database=world;";
-        private const string DefaultSqlServerConnection = "Data Source=localhost;User ID=sa;Password=Meta123$%^;Initial Catalog=Light;";
-        public static LightContext CreateContext(string mySqlConnectionString = null)
+        private const string DefaultMySqlConnectionString = "server=localhost;userid=root;pwd=Meta123$%^;port=3306;database=world;sslmode=none;";
+        public static PomeloContext CreateContext(string mySqlConnectionString = null)
         {
             if (string.IsNullOrWhiteSpace(mySqlConnectionString))
             {
-                mySqlConnectionString = DefaultSqlServerConnection;
+                mySqlConnectionString = DefaultMySqlConnectionString;
             }
-            var optionBuilder = new DbContextOptionsBuilder<LightContext>();
-            //var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
+            var optionBuilder = new DbContextOptionsBuilder<PomeloContext>();
+         
             optionBuilder.UseMySQL(mySqlConnectionString, m =>
             {
                 
             });
-            var context = new LightContext(optionBuilder.Options);
+            var context = new PomeloContext(optionBuilder.Options);
             context.Database.EnsureCreated();
             return context;
         }

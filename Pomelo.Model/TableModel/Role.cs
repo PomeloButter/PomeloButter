@@ -6,7 +6,7 @@ namespace Pomelo.Model.TableModel
     /// <summary>
     /// 角色实体
     /// </summary>
-    public class Role : BaseModel
+    public class Role : CommonObject
     {
         /// <summary>
         /// 角色名称

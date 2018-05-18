@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Pomelo.Model.TableModel
 {
-    public class User:BaseModel
+    public class User:CommonObject
     {
         /// <summary>
         /// 用户名
@@ -23,15 +24,10 @@ namespace Pomelo.Model.TableModel
         /// 出生年月日
         /// </summary>
         public DateTime Birthday { get; set; }
-
         /// <summary>
-        /// 一个用户隶属于多个角色
+        /// 邮件地址
         /// </summary>
-        //public ICollection<Role> RoleList { get; set; }
-
-        ///// <summary>
-        ///// 邮件地址
-        ///// </summary>
-        //public string Email { get; set; }
+        public string Email { get; set; }
+        public ICollection<Image> ImageList { get; set; }
     }
 }

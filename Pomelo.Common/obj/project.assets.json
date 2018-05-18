@@ -182,12 +182,15 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "D:\\AspNetCoreStudy\\Pomelo\\Pomelo.Common\\Pomelo.Common.csproj",
+      "projectUniqueName": "D:\\pomeloButter\\Pomelo.Common\\Pomelo.Common.csproj",
       "projectName": "Pomelo.Common",
-      "projectPath": "D:\\AspNetCoreStudy\\Pomelo\\Pomelo.Common\\Pomelo.Common.csproj",
+      "projectPath": "D:\\pomeloButter\\Pomelo.Common\\Pomelo.Common.csproj",
       "packagesPath": "C:\\Users\\colin.ji\\.nuget\\packages\\",
-      "outputPath": "D:\\AspNetCoreStudy\\Pomelo\\Pomelo.Common\\obj\\",
+      "outputPath": "D:\\pomeloButter\\Pomelo.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -221,7 +224,7 @@
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.0, )",
+            "version": "2.0.0",
             "autoReferenced": true
           }
         },

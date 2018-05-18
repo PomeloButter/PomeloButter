@@ -8,7 +8,7 @@ namespace Pomelo.Repository.MySQL
     /// <summary>
     /// MySql中的用户仓储实现
     /// </summary>
-    public class UserRepositoryMySql : IUserRepository
+    public  class UserRepositoryMySql : IUserRepository
     {
         /// <summary>
         /// 创建一个用户
@@ -18,7 +18,7 @@ namespace Pomelo.Repository.MySQL
         /// <returns></returns>
         public bool CreateEntity(User entity, string connectionString = null)
         {
-            using (LightContext context = MySQLDataBaseConfig.CreateContext(connectionString))
+            using (PomeloContext context = MySqlDataBaseConfig.CreateContext(connectionString))
             {
                 context.User.Add(entity);
                 return context.SaveChanges() > 0;
@@ -33,7 +33,7 @@ namespace Pomelo.Repository.MySQL
         /// <returns></returns>
         public bool CreateEntityList(IEnumerable<User> entityList, string connectionString = null)
         {
-            using (LightContext context = MySQLDataBaseConfig.CreateContext(connectionString))
+            using (PomeloContext context = MySqlDataBaseConfig.CreateContext(connectionString))
             {
                 context.User.AddRange(entityList);
                 return context.SaveChanges() > 0;
@@ -46,9 +46,9 @@ namespace Pomelo.Repository.MySQL
         /// <param name="id">主键Id</param>
         /// <param name="connectionString">链接字符串</param>
         /// <returns></returns>
-        public bool DeleteEntityById(int id, string connectionString = null)
+        public bool DeleteEntityById(string id, string connectionString = null)
         {
-            using (LightContext context = MySQLDataBaseConfig.CreateContext(connectionString))
+            using (PomeloContext context = MySqlDataBaseConfig.CreateContext(connectionString))
             {
                 context.User.Remove(context.Find<User>(id));
                 return context.SaveChanges() > 0;
@@ -62,7 +62,7 @@ namespace Pomelo.Repository.MySQL
         /// <returns></returns>
         public IEnumerable<User> RetriveAllEntity(string connectionString = null)
         {
-            using (LightContext context = MySQLDataBaseConfig.CreateContext(connectionString))
+            using (PomeloContext context = MySqlDataBaseConfig.CreateContext(connectionString))
             {
                 List<User> allUsers = new List<User>();
                 allUsers.AddRange(context.User);
@@ -76,9 +76,9 @@ namespace Pomelo.Repository.MySQL
         /// <param name="id">主键Id</param>
         /// <param name="connectionString">链接字符串</param>
         /// <returns></returns>
-        public User RetriveOneEntityById(int id, string connectionString = null)
+        public User RetriveOneEntityById(string id, string connectionString = null)
         {
-            using (LightContext context = MySQLDataBaseConfig.CreateContext(connectionString))
+            using (PomeloContext context = MySqlDataBaseConfig.CreateContext(connectionString))
             {
                 return context.Find<User>(id);
             }
@@ -92,7 +92,7 @@ namespace Pomelo.Repository.MySQL
         /// <returns></returns>
         public bool UpdateEntity(User entity, string connectionString = null)
         {
-            using (LightContext context = MySQLDataBaseConfig.CreateContext(connectionString))
+            using (PomeloContext context = MySqlDataBaseConfig.CreateContext(connectionString))
             {
                 context.Update<User>(entity);
                 return context.SaveChanges() > 0;

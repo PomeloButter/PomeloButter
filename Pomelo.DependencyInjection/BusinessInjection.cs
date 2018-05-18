@@ -8,7 +8,7 @@ namespace Pomelo.DependencyInjection
     /// <summary>
     /// 注入业务逻辑层
     /// </summary>
-    public class BusinessInjection
+    public static class BusinessInjection
     {
         public static void ConfigureBusiness(IServiceCollection services)
         {
