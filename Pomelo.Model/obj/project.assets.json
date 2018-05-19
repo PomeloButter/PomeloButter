@@ -664,7 +664,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\colin.ji\\.nuget\\packages\\": {},
+    "C:\\Users\\pomelo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -673,17 +673,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\pomeloButter\\Pomelo.Model\\Pomelo.Model.csproj",
+      "projectUniqueName": "D:\\MDA\\pomeloButter\\Pomelo.Model\\Pomelo.Model.csproj",
       "projectName": "Pomelo.Model",
-      "projectPath": "D:\\pomeloButter\\Pomelo.Model\\Pomelo.Model.csproj",
-      "packagesPath": "C:\\Users\\colin.ji\\.nuget\\packages\\",
-      "outputPath": "D:\\pomeloButter\\Pomelo.Model\\obj\\",
+      "projectPath": "D:\\MDA\\pomeloButter\\Pomelo.Model\\Pomelo.Model.csproj",
+      "packagesPath": "C:\\Users\\pomelo\\.nuget\\packages\\",
+      "outputPath": "D:\\MDA\\pomeloButter\\Pomelo.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\colin.ji\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pomelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -691,8 +691,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/imagesharp": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
@@ -711,7 +710,7 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },

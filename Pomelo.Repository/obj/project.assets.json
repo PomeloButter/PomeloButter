@@ -6072,7 +6072,7 @@
       ]
     },
     "System.Text.Encoding.CodePages/4.4.0": {
-      "sha512": "PquVDKKu7d/d1A5ebmW5u8HjR31XBbCiY5dIUBMi4WBKXD8sqUyvshgBMek5qmSbBcX2Th35jOqQLDNuXAOnsg==",
+      "sha512": "6JX7ZdaceBiLKLkYt8zJcp4xTJd1uYyXXEkPw6mnlUIjh1gZPIVKPtRXPmY5kLf6DwZmf5YLwR3QUrRonl7l0A==",
       "type": "package",
       "path": "system.text.encoding.codepages/4.4.0",
       "files": [
@@ -6649,7 +6649,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\colin.ji\\.nuget\\packages\\": {},
+    "C:\\Users\\pomelo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -6658,17 +6658,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\pomeloButter\\Pomelo.Repository\\Pomelo.Repository.csproj",
+      "projectUniqueName": "D:\\MDA\\pomeloButter\\Pomelo.Repository\\Pomelo.Repository.csproj",
       "projectName": "Pomelo.Repository",
-      "projectPath": "D:\\pomeloButter\\Pomelo.Repository\\Pomelo.Repository.csproj",
-      "packagesPath": "C:\\Users\\colin.ji\\.nuget\\packages\\",
-      "outputPath": "D:\\pomeloButter\\Pomelo.Repository\\obj\\",
+      "projectPath": "D:\\MDA\\pomeloButter\\Pomelo.Repository\\Pomelo.Repository.csproj",
+      "packagesPath": "C:\\Users\\pomelo\\.nuget\\packages\\",
+      "outputPath": "D:\\MDA\\pomeloButter\\Pomelo.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\colin.ji\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pomelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6676,17 +6676,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/imagesharp": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\pomeloButter\\Pomelo.IRepository\\Pomelo.IRepository.csproj": {
-              "projectPath": "D:\\pomeloButter\\Pomelo.IRepository\\Pomelo.IRepository.csproj"
+            "D:\\MDA\\pomeloButter\\Pomelo.Model\\Pomelo.Model.csproj": {
+              "projectPath": "D:\\MDA\\pomeloButter\\Pomelo.Model\\Pomelo.Model.csproj"
             },
-            "D:\\pomeloButter\\Pomelo.Model\\Pomelo.Model.csproj": {
-              "projectPath": "D:\\pomeloButter\\Pomelo.Model\\Pomelo.Model.csproj"
+            "D:\\MDA\\pomeloButter\\Pomelo.IRepository\\Pomelo.IRepository.csproj": {
+              "projectPath": "D:\\MDA\\pomeloButter\\Pomelo.IRepository\\Pomelo.IRepository.csproj"
             }
           }
         }
@@ -6700,23 +6699,23 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Pomelo.EntityFrameworkCore.MySql": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
-          "MySql.Data.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "8.0.10-rc"
-          },
           "Dapper": {
             "target": "Package",
-            "version": "1.50.4"
+            "version": "[1.50.4, )"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
+          },
+          "MySql.Data.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[8.0.10-rc, )"
+          },
+          "Pomelo.EntityFrameworkCore.MySql": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           }
         },
         "imports": [

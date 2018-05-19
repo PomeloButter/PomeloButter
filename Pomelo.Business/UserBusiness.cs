@@ -11,10 +11,10 @@ namespace Pomelo.Business
     /// </summary>
     public class UserBusiness : IUserBusiness
     {
-        private readonly IUserRepository iUserRepository;
+        private readonly IUserRepository _iUserRepository;
         public UserBusiness(IUserRepository userRepository)
         {
-            iUserRepository = userRepository;
+            _iUserRepository = userRepository;
         }
 
         /// <summary>
@@ -25,7 +25,7 @@ namespace Pomelo.Business
         /// <returns></returns>
         public bool CreateEntity(User entity, string connectionString = null)
         {
-            return iUserRepository.CreateEntity(entity, connectionString);
+            return _iUserRepository.CreateEntity(entity, connectionString);
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Pomelo.Business
         /// <returns></returns>
         public bool CreateEntityList(IEnumerable<User> entityList, string connectionString = null)
         {
-            return iUserRepository.CreateEntityList(entityList, connectionString);
+            return _iUserRepository.CreateEntityList(entityList, connectionString);
         }
 
         /// <summary>
@@ -47,7 +47,7 @@ namespace Pomelo.Business
         /// <returns></returns>
         public bool DeleteEntityById(string id, string connectionString = null)
         {
-            return iUserRepository.DeleteEntityById(id, connectionString);
+            return _iUserRepository.DeleteEntityById(id, connectionString);
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace Pomelo.Business
         /// <returns></returns>
         public IEnumerable<User> RetriveAllEntity(string connectionString = null)
         {
-            return iUserRepository.RetriveAllEntity(connectionString);
+            return _iUserRepository.RetriveAllEntity(connectionString);
         }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace Pomelo.Business
         /// <returns></returns>
         public User RetriveOneEntityById(string id, string connectionString = null)
         {
-            return iUserRepository.RetriveOneEntityById(id, connectionString);
+            return _iUserRepository.RetriveOneEntityById(id, connectionString);
         }
 
         /// <summary>
@@ -79,7 +79,7 @@ namespace Pomelo.Business
         /// <returns></returns>
         public bool UpdateEntity(User entity, string connectionString = null)
         {
-            return iUserRepository.UpdateEntity(entity, connectionString);
+            return _iUserRepository.UpdateEntity(entity, connectionString);
         }
     }
 }
