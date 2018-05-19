@@ -30,3 +30,15 @@ D:\pomeloButter\Pomelo.IBusiness\bin\Debug\netcoreapp2.0\Pomelo.IBusiness.dll
 D:\pomeloButter\Pomelo.IBusiness\bin\Debug\netcoreapp2.0\Pomelo.IBusiness.pdb
 D:\pomeloButter\Pomelo.IBusiness\bin\Debug\netcoreapp2.0\Pomelo.Model.dll
 D:\pomeloButter\Pomelo.IBusiness\bin\Debug\netcoreapp2.0\Pomelo.Model.pdb
+D:\MDA\pomeloButter\Pomelo.IBusiness\bin\Debug\netcoreapp2.0\Pomelo.IBusiness.deps.json
+D:\MDA\pomeloButter\Pomelo.IBusiness\bin\Debug\netcoreapp2.0\Pomelo.IBusiness.dll
+D:\MDA\pomeloButter\Pomelo.IBusiness\bin\Debug\netcoreapp2.0\Pomelo.IBusiness.pdb
+D:\MDA\pomeloButter\Pomelo.IBusiness\bin\Debug\netcoreapp2.0\Pomelo.Model.dll
+D:\MDA\pomeloButter\Pomelo.IBusiness\bin\Debug\netcoreapp2.0\Pomelo.Model.pdb
+D:\MDA\pomeloButter\Pomelo.IBusiness\obj\Debug\netcoreapp2.0\Pomelo.IBusiness.csprojAssemblyReference.cache
+D:\MDA\pomeloButter\Pomelo.IBusiness\obj\Debug\netcoreapp2.0\Pomelo.IBusiness.csproj.CoreCompileInputs.cache
+D:\MDA\pomeloButter\Pomelo.IBusiness\obj\Debug\netcoreapp2.0\Pomelo.IBusiness.AssemblyInfoInputs.cache
+D:\MDA\pomeloButter\Pomelo.IBusiness\obj\Debug\netcoreapp2.0\Pomelo.IBusiness.AssemblyInfo.cs
+D:\MDA\pomeloButter\Pomelo.IBusiness\obj\Debug\netcoreapp2.0\Pomelo.IBusiness.csproj.CopyComplete
+D:\MDA\pomeloButter\Pomelo.IBusiness\obj\Debug\netcoreapp2.0\Pomelo.IBusiness.dll
+D:\MDA\pomeloButter\Pomelo.IBusiness\obj\Debug\netcoreapp2.0\Pomelo.IBusiness.pdb

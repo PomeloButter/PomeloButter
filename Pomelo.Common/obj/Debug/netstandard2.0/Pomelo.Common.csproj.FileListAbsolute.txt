@@ -14,3 +14,11 @@ D:\pomeloButter\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.AssemblyInf
 D:\pomeloButter\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.AssemblyInfo.cs
 D:\pomeloButter\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.dll
 D:\pomeloButter\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.pdb
+D:\MDA\pomeloButter\Pomelo.Common\bin\Debug\netstandard2.0\Pomelo.Common.deps.json
+D:\MDA\pomeloButter\Pomelo.Common\bin\Debug\netstandard2.0\Pomelo.Common.dll
+D:\MDA\pomeloButter\Pomelo.Common\bin\Debug\netstandard2.0\Pomelo.Common.pdb
+D:\MDA\pomeloButter\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.csproj.CoreCompileInputs.cache
+D:\MDA\pomeloButter\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.AssemblyInfoInputs.cache
+D:\MDA\pomeloButter\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.AssemblyInfo.cs
+D:\MDA\pomeloButter\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.dll
+D:\MDA\pomeloButter\Pomelo.Common\obj\Debug\netstandard2.0\Pomelo.Common.pdb

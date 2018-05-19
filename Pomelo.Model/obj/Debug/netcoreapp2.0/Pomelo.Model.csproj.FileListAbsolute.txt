@@ -22,3 +22,11 @@ D:\pomeloButter\Pomelo.Model\obj\Debug\netcoreapp2.0\Pomelo.Model.AssemblyInfoIn
 D:\pomeloButter\Pomelo.Model\obj\Debug\netcoreapp2.0\Pomelo.Model.AssemblyInfo.cs
 D:\pomeloButter\Pomelo.Model\obj\Debug\netcoreapp2.0\Pomelo.Model.dll
 D:\pomeloButter\Pomelo.Model\obj\Debug\netcoreapp2.0\Pomelo.Model.pdb
+D:\MDA\pomeloButter\Pomelo.Model\bin\Debug\netcoreapp2.0\Pomelo.Model.deps.json
+D:\MDA\pomeloButter\Pomelo.Model\bin\Debug\netcoreapp2.0\Pomelo.Model.dll
+D:\MDA\pomeloButter\Pomelo.Model\bin\Debug\netcoreapp2.0\Pomelo.Model.pdb
+D:\MDA\pomeloButter\Pomelo.Model\obj\Debug\netcoreapp2.0\Pomelo.Model.csproj.CoreCompileInputs.cache
+D:\MDA\pomeloButter\Pomelo.Model\obj\Debug\netcoreapp2.0\Pomelo.Model.AssemblyInfoInputs.cache
+D:\MDA\pomeloButter\Pomelo.Model\obj\Debug\netcoreapp2.0\Pomelo.Model.AssemblyInfo.cs
+D:\MDA\pomeloButter\Pomelo.Model\obj\Debug\netcoreapp2.0\Pomelo.Model.dll
+D:\MDA\pomeloButter\Pomelo.Model\obj\Debug\netcoreapp2.0\Pomelo.Model.pdb

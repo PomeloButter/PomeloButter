@@ -29,3 +29,15 @@ D:\pomeloButter\Pomelo.IRepository\bin\Debug\netcoreapp2.0\Pomelo.IRepository.dl
 D:\pomeloButter\Pomelo.IRepository\bin\Debug\netcoreapp2.0\Pomelo.IRepository.pdb
 D:\pomeloButter\Pomelo.IRepository\bin\Debug\netcoreapp2.0\Pomelo.Model.dll
 D:\pomeloButter\Pomelo.IRepository\bin\Debug\netcoreapp2.0\Pomelo.Model.pdb
+D:\MDA\pomeloButter\Pomelo.IRepository\bin\Debug\netcoreapp2.0\Pomelo.IRepository.deps.json
+D:\MDA\pomeloButter\Pomelo.IRepository\bin\Debug\netcoreapp2.0\Pomelo.IRepository.dll
+D:\MDA\pomeloButter\Pomelo.IRepository\bin\Debug\netcoreapp2.0\Pomelo.IRepository.pdb
+D:\MDA\pomeloButter\Pomelo.IRepository\bin\Debug\netcoreapp2.0\Pomelo.Model.dll
+D:\MDA\pomeloButter\Pomelo.IRepository\bin\Debug\netcoreapp2.0\Pomelo.Model.pdb
+D:\MDA\pomeloButter\Pomelo.IRepository\obj\Debug\netcoreapp2.0\Pomelo.IRepository.csprojAssemblyReference.cache
+D:\MDA\pomeloButter\Pomelo.IRepository\obj\Debug\netcoreapp2.0\Pomelo.IRepository.csproj.CoreCompileInputs.cache
+D:\MDA\pomeloButter\Pomelo.IRepository\obj\Debug\netcoreapp2.0\Pomelo.IRepository.AssemblyInfoInputs.cache
+D:\MDA\pomeloButter\Pomelo.IRepository\obj\Debug\netcoreapp2.0\Pomelo.IRepository.AssemblyInfo.cs
+D:\MDA\pomeloButter\Pomelo.IRepository\obj\Debug\netcoreapp2.0\Pomelo.IRepository.csproj.CopyComplete
+D:\MDA\pomeloButter\Pomelo.IRepository\obj\Debug\netcoreapp2.0\Pomelo.IRepository.dll
+D:\MDA\pomeloButter\Pomelo.IRepository\obj\Debug\netcoreapp2.0\Pomelo.IRepository.pdb
