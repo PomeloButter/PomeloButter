@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Pomelo.Model.TableModel;
+﻿using PomeloButter.Model.TableModel;
 
-namespace Pomelo.IRepository
+namespace PomeloButter.IRepository
 {
     /// <summary>
     /// 基类数据仓储(CRUD-增查改删)

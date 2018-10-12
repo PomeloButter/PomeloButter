@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Pomelo.IBusiness;
-using Pomelo.Model.TableModel;
+using PomeloButter.IBusiness;
+using PomeloButter.Model.TableModel;
 
-namespace Pomelo.Api.Controllers
+namespace PomeloButterApi.Controllers
 {
 
     /// <summary>
@@ -95,6 +94,7 @@ namespace Pomelo.Api.Controllers
         [HttpDelete("{id}")]
         public bool DeleteUser(string id)
         {
+            string a = "";
             return _iUserBusiness.DeleteEntityById(id);
         }
     }

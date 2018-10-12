@@ -1,4 +1,4 @@
-﻿namespace Pomelo.Model.TableModel
+﻿namespace PomeloButter.Model.TableModel
 {
     public class Image:CommonObject
     {

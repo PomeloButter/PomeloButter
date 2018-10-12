@@ -1,9 +1,8 @@
-﻿using Pomelo.IRepository;
-using Pomelo.Repository;
-using Pomelo.Repository.MySQL;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
+using PomeloButter.IRepository;
+using PomeloButter.Repository.MySQL;
 
-namespace Pomelo.DependencyInjection
+namespace PomeloButter.DependencyInjection
 {
     /// <summary>
     /// 注入仓储层

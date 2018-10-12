@@ -1,9 +1,8 @@
-﻿using Pomelo.IRepository;
-using Pomelo.Repository.MySQL;
-using Pomelo.Model.TableModel;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using PomeloButter.IRepository;
+using PomeloButter.Model.TableModel;
 
-namespace Pomelo.Repository.MySQL
+namespace PomeloButter.Repository.MySQL
 {
     /// <summary>
     /// MySql中的用户仓储实现

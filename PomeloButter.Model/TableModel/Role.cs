@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Pomelo.Model.TableModel
+namespace PomeloButter.Model.TableModel
 {
     /// <summary>
     /// 角色实体

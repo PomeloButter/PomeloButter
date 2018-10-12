@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Pomelo.IBusiness
+namespace PomeloButter.IBusiness
 {
     /// <summary>
     /// 基类业务接口定义

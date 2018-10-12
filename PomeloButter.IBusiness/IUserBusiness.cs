@@ -1,6 +1,6 @@
-﻿using Pomelo.Model.TableModel;
+﻿using PomeloButter.Model.TableModel;
 
-namespace Pomelo.IBusiness
+namespace PomeloButter.IBusiness
 {
     /// <summary>
     /// 用户业务接口定义

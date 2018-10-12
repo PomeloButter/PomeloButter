@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-namespace Pomelo.Repository.MySQL
+
+namespace PomeloButter.Repository.MySQL
 {
     /// <summary>
     /// MySQL的数据库配置

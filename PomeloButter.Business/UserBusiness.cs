@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using Pomelo.IBusiness;
-using Pomelo.Model.TableModel;
-using Pomelo.IRepository;
+﻿using System.Collections.Generic;
+using PomeloButter.IBusiness;
+using PomeloButter.IRepository;
+using PomeloButter.Model.TableModel;
 
-namespace Pomelo.Business
+namespace PomeloButter.Business
 {
     /// <summary>
     /// 用户业务逻辑服务

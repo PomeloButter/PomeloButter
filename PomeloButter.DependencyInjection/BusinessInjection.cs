@@ -1,9 +1,8 @@
-﻿using Pomelo.Business;
-using Pomelo.IBusiness;
-using Pomelo.Model.TableModel;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
+using PomeloButter.Business;
+using PomeloButter.IBusiness;
 
-namespace Pomelo.DependencyInjection
+namespace PomeloButter.DependencyInjection
 {
     /// <summary>
     /// 注入业务逻辑层

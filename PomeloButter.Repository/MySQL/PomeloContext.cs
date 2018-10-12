@@ -1,10 +1,7 @@
-﻿using Pomelo.Model.TableModel;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.EntityFrameworkCore;
+using PomeloButter.Model.TableModel;
 
-namespace Pomelo.Repository.MySQL
+namespace PomeloButter.Repository.MySQL
 {
     /// <summary>
     /// MySQL数据库访问上下文

@@ -1,4 +1,4 @@
-﻿namespace Pomelo.Model
+﻿namespace PomeloButter.Model
 {
     /// <summary>
     /// 返回结果实体

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Pomelo.Model.TableModel
+namespace PomeloButter.Model.TableModel
 {
     public class User:CommonObject
     {
