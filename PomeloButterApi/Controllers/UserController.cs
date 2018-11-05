@@ -93,8 +93,7 @@ namespace PomeloButterApi.Controllers
         /// <returns></returns>
         [HttpDelete("{id}")]
         public bool DeleteUser(string id)
-        {
-            string a = "";
+        {           
             return _iUserBusiness.DeleteEntityById(id);
         }
     }

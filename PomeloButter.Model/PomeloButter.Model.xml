@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PomeloButter.Model</name>
+    </assembly>
+    <members>
+        <member name="T:PomeloButter.Model.ResultModel">
+            <summary>
+            返回结果实体
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.ResultModel.IsSuccess">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.ResultModel.Message">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.ResultModel.Data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.CommonObject.Id">
+            <summary>
+            主键Id
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.CommonObject.IsDeleted">
+            <summary>
+            删除标记
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.Image.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.Image.User">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="T:PomeloButter.Model.TableModel.Role">
+            <summary>
+            角色实体
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.Role.RoleName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.Role.UserList">
+            <summary>
+            一个角色包含多个用户
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.User.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.User.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.User.Gender">
+            <summary>
+            性别（0女，1男）
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.User.Birthday">
+            <summary>
+            出生年月日
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.User.Email">
+            <summary>
+            邮件地址
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.User.ImageList">
+            <summary>
+            图片
+            </summary>
+        </member>
+    </members>
+</doc>
