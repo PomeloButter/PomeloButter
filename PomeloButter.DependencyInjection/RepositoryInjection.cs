@@ -10,9 +10,8 @@ namespace PomeloButter.DependencyInjection
     public static class RepositoryInjection
     {
         public static void ConfigureRepository(IServiceCollection services)
-        {
-           
-            services.AddSingleton<IUserRepository, UserRepositoryMySql>();
+        {           
+            services.AddScoped<IUserRepository, UserRepository>();
         }
     }
 }

@@ -1,57 +1,52 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace PomeloButter.IBusiness
 {
     /// <summary>
-    /// 基类业务接口定义
+    ///     基类业务接口定义
     /// </summary>
     public interface IBaseBusiness<T> where T : class
     {
         /// <summary>
-        /// 添加一个实体
+        ///     添加一个实体
         /// </summary>
         /// <param name="entity">要创建的实体</param>
-        /// <param name="connectionString">链接字符串</param>
         /// <returns></returns>
-        bool CreateEntity(T entity, string connectionString = null);
+        Task<bool> CreateEntity(T entity);
 
         /// <summary>
-        /// 批量添加实体
+        ///     批量添加实体
         /// </summary>
         /// <param name="entityList">要创建的实体</param>
-        /// <param name="connectionString">链接字符串</param>
         /// <returns></returns>
-        bool CreateEntityList(IEnumerable<T> entityList, string connectionString = null);
+       Task <bool> CreateEntityList(IEnumerable<T> entityList);
 
         /// <summary>
-        /// 根据主键Id获取一个实体
+        ///     根据主键Id获取一个实体
         /// </summary>
         /// <param name="id">主键Id</param>
-        /// <param name="connectionString">链接字符串</param>
         /// <returns></returns>
-        T RetriveOneEntityById(string id, string connectionString = null);
+        Task<T> RetriveOneEntityById(string id);
 
         /// <summary>
-        /// 获取所有实体
+        ///     获取所有实体
         /// </summary>
-        /// <param name="connectionString">链接字符串</param>
         /// <returns></returns>
-        IEnumerable<T> RetriveAllEntity(string connectionString = null);
+        Task<IEnumerable<T>> RetriveAllEntity();
 
         /// <summary>
-        /// 修改一个实体
+        ///     修改一个实体
         /// </summary>
         /// <param name="entity">要修改的实体</param>
-        /// <param name="connectionString">链接字符串</param>
         /// <returns></returns>
-        bool UpdateEntity(T entity, string connectionString = null);
+        Task<bool> UpdateEntity(T entity);
 
         /// <summary>
-        /// 根据主键Id删除一个实体
+        ///     根据主键Id删除一个实体
         /// </summary>
         /// <param name="id">主键Id</param>
-        /// <param name="connectionString">链接字符串</param>
         /// <returns></returns>
-        bool DeleteEntityById(string id, string connectionString = null);
+        Task<bool> DeleteEntityById(string id);
     }
 }

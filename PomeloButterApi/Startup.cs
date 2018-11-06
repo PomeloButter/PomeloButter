@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Microsoft.Extensions.PlatformAbstractions;
 using PomeloButter.DependencyInjection;
+using PomeloButter.Repository.MySQL;
+using System.IO;
 
 namespace PomeloButterApi
 {
@@ -38,12 +33,15 @@ namespace PomeloButterApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+          
+            services.AddMvc();
+            services.AddDbContext<PomeloContext>(options => options.UseMySql(Configuration.GetConnectionString("mysqlConnection")));
             RepositoryInjection.ConfigureRepository(services);
             BusinessInjection.ConfigureBusiness(services);
-            services.AddMvc();
+            services.AddSingleton(Configuration);
             services.AddSwaggerGen(m =>
             {
-                m.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "PomeloApi", Version = "v1", Description = "Pomelo接口文档" });
+                m.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "PomeloButterApi", Version = "v1", Description = "Pomelo接口文档" });
                 var basePath = Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath;
                 var xmlPath = Path.Combine(basePath, "PomeloButterApi.xml");
                 m.IncludeXmlComments(xmlPath,true);

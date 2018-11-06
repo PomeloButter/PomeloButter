@@ -11,7 +11,7 @@ namespace PomeloButter.DependencyInjection
     {
         public static void ConfigureBusiness(IServiceCollection services)
         {
-            services.AddSingleton<IUserBusiness, UserBusiness>();
+            services.AddTransient<IUserBusiness, UserBusiness>();
         }
     }
 }

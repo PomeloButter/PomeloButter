@@ -12,12 +12,10 @@ namespace PomeloButter.Repository.MySQL
             : base(options)
         {
         }
-
         /// <summary>
         /// 用户表
         /// </summary>
         public DbSet<User> User { get; set; }
-
         /// <summary>
         /// 角色表
         /// </summary>
@@ -25,6 +23,8 @@ namespace PomeloButter.Repository.MySQL
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+           
             modelBuilder.Entity<User>(m =>
             {   
                 m.Property(n => n.UserName).HasMaxLength(50);//设置用户名最大长度为50个字符
@@ -40,7 +40,7 @@ namespace PomeloButter.Repository.MySQL
                     m.Property(n => n.Name).HasMaxLength(100).IsRequired();
                 }
             );
-            base.OnModelCreating(modelBuilder);
+           
         }
     }
 }
