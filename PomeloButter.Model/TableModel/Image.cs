@@ -1,5 +1,8 @@
 ﻿namespace PomeloButter.Model.TableModel
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Image:CommonObject
     {
         /// <summary>

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using PomeloButter.IBusiness;
 using PomeloButter.Model.TableModel;
 
-namespace PomeloButterApi.Controllers
+namespace PomeloApi.Controllers
 {
     /// <summary>
     ///     用户控制器

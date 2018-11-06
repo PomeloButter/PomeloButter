@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace PomeloButter.Model.TableModel
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class User:CommonObject
     {
         /// <summary>

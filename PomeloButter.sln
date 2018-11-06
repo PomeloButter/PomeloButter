@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomeloButterApi", "PomeloButterApi\PomeloButterApi.csproj", "{C04AD02F-FD1D-440D-A519-66F1E0FA5376}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PomeloButterApi", "PomeloButterApi\PomeloButterApi.csproj", "{C04AD02F-FD1D-440D-A519-66F1E0FA5376}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomeloButter.Model", "PomeloButter.Model\PomeloButter.Model.csproj", "{E499EEDD-588F-4F0A-A044-31868837D5BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PomeloButter.Model", "PomeloButter.Model\PomeloButter.Model.csproj", "{E499EEDD-588F-4F0A-A044-31868837D5BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomeloButter.IRepository", "PomeloButter.IRepository\PomeloButter.IRepository.csproj", "{55862896-F7AB-418D-A591-D4945675BFD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PomeloButter.IRepository", "PomeloButter.IRepository\PomeloButter.IRepository.csproj", "{55862896-F7AB-418D-A591-D4945675BFD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomeloButter.Repository", "PomeloButter.Repository\PomeloButter.Repository.csproj", "{1B2D2279-73EA-4BED-9FC8-BECA7BB8B75D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PomeloButter.Repository", "PomeloButter.Repository\PomeloButter.Repository.csproj", "{1B2D2279-73EA-4BED-9FC8-BECA7BB8B75D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomeloButter.IBusiness", "PomeloButter.IBusiness\PomeloButter.IBusiness.csproj", "{247AA563-1667-4080-98C1-0258DC3CEAC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PomeloButter.IBusiness", "PomeloButter.IBusiness\PomeloButter.IBusiness.csproj", "{247AA563-1667-4080-98C1-0258DC3CEAC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomeloButter.Business", "PomeloButter.Business\PomeloButter.Business.csproj", "{A6065A1B-49FC-4A29-81F0-4F0D3168D091}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PomeloButter.Business", "PomeloButter.Business\PomeloButter.Business.csproj", "{A6065A1B-49FC-4A29-81F0-4F0D3168D091}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomeloButter.DependencyInjection", "PomeloButter.DependencyInjection\PomeloButter.DependencyInjection.csproj", "{33CD5CB2-BEE3-411A-A9B9-1DF602439360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PomeloButter.DependencyInjection", "PomeloButter.DependencyInjection\PomeloButter.DependencyInjection.csproj", "{33CD5CB2-BEE3-411A-A9B9-1DF602439360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomeloApi", "PomeloApi\PomeloApi.csproj", "{534EF5AE-4C88-4A0D-BCB8-8F507B3380C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{33CD5CB2-BEE3-411A-A9B9-1DF602439360}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33CD5CB2-BEE3-411A-A9B9-1DF602439360}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33CD5CB2-BEE3-411A-A9B9-1DF602439360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{534EF5AE-4C88-4A0D-BCB8-8F507B3380C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534EF5AE-4C88-4A0D-BCB8-8F507B3380C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534EF5AE-4C88-4A0D-BCB8-8F507B3380C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534EF5AE-4C88-4A0D-BCB8-8F507B3380C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

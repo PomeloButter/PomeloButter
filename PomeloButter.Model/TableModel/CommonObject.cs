@@ -2,6 +2,9 @@
 
 namespace PomeloButter.Model.TableModel
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class CommonObject
     {
         /// <summary>

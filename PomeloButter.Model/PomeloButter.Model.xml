@@ -24,6 +24,11 @@
             返回数据
             </summary>
         </member>
+        <member name="T:PomeloButter.Model.TableModel.CommonObject">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:PomeloButter.Model.TableModel.CommonObject.Id">
             <summary>
             主键Id
@@ -32,6 +37,11 @@
         <member name="P:PomeloButter.Model.TableModel.CommonObject.IsDeleted">
             <summary>
             删除标记
+            </summary>
+        </member>
+        <member name="T:PomeloButter.Model.TableModel.Image">
+            <summary>
+            
             </summary>
         </member>
         <member name="P:PomeloButter.Model.TableModel.Image.Name">
@@ -57,6 +67,11 @@
         <member name="P:PomeloButter.Model.TableModel.Role.UserList">
             <summary>
             一个角色包含多个用户
+            </summary>
+        </member>
+        <member name="T:PomeloButter.Model.TableModel.User">
+            <summary>
+            
             </summary>
         </member>
         <member name="P:PomeloButter.Model.TableModel.User.UserName">
