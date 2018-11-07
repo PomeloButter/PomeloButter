@@ -17,42 +17,31 @@ namespace PomeloButter.Repository.Migrations
                 .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("PomeloButter.Model.TableModel.Image", b =>
+            modelBuilder.Entity("PomeloButter.Model.TableModel.Post", b =>
                 {
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(36);
 
-                    b.Property<bool>("IsDeleted");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("Author")
                         .IsRequired()
-                        .HasMaxLength(100);
+                        .HasMaxLength(50);
 
-                    b.Property<string>("UserId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Image");
-                });
-
-            modelBuilder.Entity("PomeloButter.Model.TableModel.Role", b =>
-                {
-                    b.Property<string>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(36);
+                    b.Property<byte[]>("Body")
+                        .IsRequired()
+                        .HasColumnType("blob");
 
                     b.Property<bool>("IsDeleted");
 
-                    b.Property<string>("RoleName")
+                    b.Property<DateTime>("LastModified");
+
+                    b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(100);
 
                     b.HasKey("Id");
 
-                    b.ToTable("Role");
+                    b.ToTable("Post");
                 });
 
             modelBuilder.Entity("PomeloButter.Model.TableModel.User", b =>
@@ -73,30 +62,12 @@ namespace PomeloButter.Repository.Migrations
                         .IsRequired()
                         .HasMaxLength(20);
 
-                    b.Property<string>("RoleId");
-
                     b.Property<string>("UserName")
                         .HasMaxLength(50);
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RoleId");
-
                     b.ToTable("User");
-                });
-
-            modelBuilder.Entity("PomeloButter.Model.TableModel.Image", b =>
-                {
-                    b.HasOne("PomeloButter.Model.TableModel.User", "User")
-                        .WithMany("ImageList")
-                        .HasForeignKey("UserId");
-                });
-
-            modelBuilder.Entity("PomeloButter.Model.TableModel.User", b =>
-                {
-                    b.HasOne("PomeloButter.Model.TableModel.Role")
-                        .WithMany("UserList")
-                        .HasForeignKey("RoleId");
                 });
 #pragma warning restore 612, 618
         }

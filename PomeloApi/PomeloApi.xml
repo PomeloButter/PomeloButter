@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PomeloApi</name>
+    </assembly>
+    <members>
+        <member name="T:PomeloApi.Controllers.PostController">
+            <summary>
+            文章控制器
+            </summary>
+        </member>
+        <member name="M:PomeloApi.Controllers.PostController.#ctor(PomeloButter.IBusiness.IPostBusiness,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+                构造函数注入服务
+            </summary>
+            <param name="postBusiness"></param>
+            <param name="loggerFactory"></param>
+        </member>
+        <member name="M:PomeloApi.Controllers.PostController.GetAllPost">
+            <summary>
+            获取所有文章
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PomeloApi.Controllers.UserController">
+            <summary>
+                用户控制器
+            </summary>
+        </member>
+        <member name="M:PomeloApi.Controllers.UserController.#ctor(PomeloButter.IBusiness.IUserBusiness)">
+            <summary>
+                构造函数注入服务
+            </summary>
+            <param name="userBusiness"></param>
+        </member>
+        <member name="M:PomeloApi.Controllers.UserController.GetAllUser">
+            <summary>
+                获取所有用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PomeloApi.Controllers.UserController.GetOneUser(System.String)">
+            <summary>
+                根据主键Id获取一个用户
+            </summary>
+            <param name="id">主键Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:PomeloApi.Controllers.UserController.CreateUser(PomeloButter.Model.TableModel.User)">
+            <summary>
+                新增用户
+            </summary>
+            <param name="user">用户实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:PomeloApi.Controllers.UserController.UpdateUser(System.String,PomeloButter.Model.TableModel.User)">
+            <summary>
+                修改用户
+            </summary>
+            <param name="id">主键Id</param>
+            <param name="user">用户实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:PomeloApi.Controllers.UserController.DeleteUser(System.String)">
+            <summary>
+                根据主键Id删除一个用户
+            </summary>
+            <param name="id">主键Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:PomeloApi.Extensions.ExceptionHandlingExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PomeloApi.Extensions.ExceptionHandlingExtensions.UseApiExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="loggerFactory"></param>
+        </member>
+        <member name="T:PomeloApi.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PomeloApi.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:PomeloApi.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PomeloApi.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PomeloApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:PomeloApi.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PomeloApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:PomeloApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="loggerFactory"></param>
+        </member>
+    </members>
+</doc>

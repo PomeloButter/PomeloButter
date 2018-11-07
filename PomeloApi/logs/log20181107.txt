@@ -1,0 +1,12 @@
+2018-11-07 22:31:59.889 +08:00 [INF] User profile is available. Using 'C:\Users\pomelo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-07 22:32:10.429 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/post  
+2018-11-07 22:32:10.671 +08:00 [INF] Route matched with {action = "GetAllPost", controller = "Post"}. Executing action PomeloApi.Controllers.PostController.GetAllPost (PomeloApi)
+2018-11-07 22:32:11.083 +08:00 [INF] Executing action method PomeloApi.Controllers.PostController.GetAllPost (PomeloApi) - Validation state: "Valid"
+2018-11-07 22:32:11.391 +08:00 [INF] Entity Framework Core 2.1.1-rtm-30846 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-07 22:32:11.793 +08:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`IsDeleted`, `p`.`LastModified`, `p`.`Title`
+FROM `Post` AS `p`
+2018-11-07 22:32:11.860 +08:00 [INF] Executed action method PomeloApi.Controllers.PostController.GetAllPost (PomeloApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 758.4559ms.
+2018-11-07 22:32:11.881 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PomeloButter.Model.TableModel.Post, PomeloButter.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-07 22:32:11.924 +08:00 [INF] Executed action PomeloApi.Controllers.PostController.GetAllPost (PomeloApi) in 1248.0805ms
+2018-11-07 22:32:11.942 +08:00 [INF] Request finished in 1514.7451ms 200 application/json; charset=utf-8

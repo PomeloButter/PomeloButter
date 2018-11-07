@@ -12,6 +12,7 @@ namespace PomeloButter.DependencyInjection
         public static void ConfigureRepository(IServiceCollection services)
         {           
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IPostRepository, PostRepository>();
         }
     }
 }

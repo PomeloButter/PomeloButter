@@ -39,34 +39,29 @@
             删除标记
             </summary>
         </member>
-        <member name="T:PomeloButter.Model.TableModel.Image">
+        <member name="T:PomeloButter.Model.TableModel.Post">
+            <summary>
+            文章
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.Post.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.Post.Body">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.Post.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:PomeloButter.Model.TableModel.Post.LastModified">
             <summary>
             
-            </summary>
-        </member>
-        <member name="P:PomeloButter.Model.TableModel.Image.Name">
-            <summary>
-            名称
-            </summary>
-        </member>
-        <member name="P:PomeloButter.Model.TableModel.Image.User">
-            <summary>
-            用户
-            </summary>
-        </member>
-        <member name="T:PomeloButter.Model.TableModel.Role">
-            <summary>
-            角色实体
-            </summary>
-        </member>
-        <member name="P:PomeloButter.Model.TableModel.Role.RoleName">
-            <summary>
-            角色名称
-            </summary>
-        </member>
-        <member name="P:PomeloButter.Model.TableModel.Role.UserList">
-            <summary>
-            一个角色包含多个用户
             </summary>
         </member>
         <member name="T:PomeloButter.Model.TableModel.User">
@@ -97,11 +92,6 @@
         <member name="P:PomeloButter.Model.TableModel.User.Email">
             <summary>
             邮件地址
-            </summary>
-        </member>
-        <member name="P:PomeloButter.Model.TableModel.User.ImageList">
-            <summary>
-            图片
             </summary>
         </member>
     </members>

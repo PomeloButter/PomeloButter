@@ -10,7 +10,7 @@ namespace PomeloApi.Controllers
     /// <summary>
     ///     用户控制器
     /// </summary>
-    [Route("api/[controller]")]
+    [Route("api/User")]
     public class UserController : Controller
     {
         private readonly IUserBusiness _iUserBusiness;

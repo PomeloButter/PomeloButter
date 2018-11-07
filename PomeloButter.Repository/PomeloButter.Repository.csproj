@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20181106074709_MyFirstMigration.cs" />
+    <Compile Remove="Migrations\20181106141300_second.cs" />
+    <Compile Remove="Migrations\20181107132038_AddRemarkToPost.cs" />
+    <Compile Remove="Migrations\20181107132432_AddRemarkToPost1.cs" />
+    <Compile Remove="Migrations\20181107132604_AddRemarkToPost2.cs" />
+    <Compile Remove="Migrations\20181107132703_AddRemarkToPost3.cs" />
+    <Compile Remove="Migrations\20181107132842_AddRemarkToPost.cs" />
+    <Compile Remove="Migrations\20181107133243_AddRemarkToPost.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="1.50.5" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.0" />
   </ItemGroup>

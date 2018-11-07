@@ -31,9 +31,6 @@ namespace PomeloButter.Model.TableModel
         /// 邮件地址
         /// </summary>
         public string Email { get; set; }
-        /// <summary>
-        /// 图片
-        /// </summary>
-        public ICollection<Image> ImageList { get; set; }
+ 
     }
 }

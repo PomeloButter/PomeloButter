@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using PomeloApi.Extensions;
 using PomeloButter.DependencyInjection;
 using PomeloButter.Repository.MySQL;
 
@@ -51,8 +52,7 @@ namespace PomeloApi
                 });
             services.AddDbContext<PomeloContext>(options => options.UseMySql(Configuration.GetConnectionString("mysqlConnection")));
             RepositoryInjection.ConfigureRepository(services);
-            BusinessInjection.ConfigureBusiness(services);
-            services.AddSingleton(Configuration);
+            BusinessInjection.ConfigureBusiness(services);          
             services.AddSwaggerGen(m =>
             {
                 m.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "PomeloButterApi", Version = "v1", Description = "Pomelo接口文档" });
@@ -69,12 +69,13 @@ namespace PomeloApi
         /// </summary>
         /// <param name="app"></param>
         /// <param name="env"></param>
+        /// <param name="loggerFactory"></param>
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseApiExceptionHandler(loggerFactory);
             }
             else
             {

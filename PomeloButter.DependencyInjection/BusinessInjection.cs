@@ -12,6 +12,7 @@ namespace PomeloButter.DependencyInjection
         public static void ConfigureBusiness(IServiceCollection services)
         {
             services.AddTransient<IUserBusiness, UserBusiness>();
+            services.AddTransient<IPostBusiness, PostBusiness>();
         }
     }
 }
