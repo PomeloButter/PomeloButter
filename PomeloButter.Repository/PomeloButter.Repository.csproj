@@ -13,11 +13,11 @@
     <Compile Remove="Migrations\20181107132703_AddRemarkToPost3.cs" />
     <Compile Remove="Migrations\20181107132842_AddRemarkToPost.cs" />
     <Compile Remove="Migrations\20181107133243_AddRemarkToPost.cs" />
+    <Compile Remove="Migrations\20181108012338_Second.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="1.50.5" />
-    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.2" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,0 +1,762 @@
+2018-11-08 09:10:01.558 +08:00 [INF] User profile is available. Using 'C:\Users\colin.ji\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-08 09:12:37.429 +08:00 [INF] User profile is available. Using 'C:\Users\colin.ji\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-08 09:12:51.774 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2018-11-08 09:12:51.801 +08:00 [INF] Request finished in 29.0854ms 301 
+2018-11-08 09:12:51.807 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/index.html  
+2018-11-08 09:12:51.818 +08:00 [INF] Request finished in 11.5222ms 200 text/html
+2018-11-08 09:12:51.834 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger-ui.css  
+2018-11-08 09:12:51.835 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger-ui-bundle.js  
+2018-11-08 09:12:51.836 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger-ui-standalone-preset.js  
+2018-11-08 09:12:51.883 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2018-11-08 09:12:51.890 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2018-11-08 09:12:51.894 +08:00 [INF] Request finished in 60.0332ms 200 text/css
+2018-11-08 09:12:51.896 +08:00 [INF] Request finished in 60.063ms 200 application/javascript
+2018-11-08 09:12:51.907 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2018-11-08 09:12:51.910 +08:00 [INF] Request finished in 74.313ms 200 application/javascript
+2018-11-08 09:12:52.406 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2018-11-08 09:12:52.456 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon-32x32.png  
+2018-11-08 09:12:52.462 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2018-11-08 09:12:52.467 +08:00 [INF] Request finished in 10.2781ms 200 image/png
+2018-11-08 09:12:52.468 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon-16x16.png  
+2018-11-08 09:12:52.469 +08:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2018-11-08 09:12:52.471 +08:00 [INF] Request finished in 3.08ms 200 image/png
+2018-11-08 09:12:52.686 +08:00 [INF] Request finished in 279.9717ms 200 application/json;charset=utf-8
+2018-11-08 09:14:21.272 +08:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:5001/api/post  0
+2018-11-08 09:14:21.311 +08:00 [INF] Request finished in 38.1487ms 404 
+2018-11-08 09:16:08.868 +08:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/post  0
+2018-11-08 09:16:08.886 +08:00 [INF] Request finished in 17.6055ms 307 
+2018-11-08 09:16:08.913 +08:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:5001/api/post  0
+2018-11-08 09:16:08.916 +08:00 [INF] Request finished in 2.7813ms 404 
+2018-11-08 09:16:22.043 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/post  
+2018-11-08 09:16:22.047 +08:00 [INF] Request finished in 4.1611ms 307 
+2018-11-08 09:16:22.049 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/post  
+2018-11-08 09:16:22.077 +08:00 [INF] Route matched with {action = "GetAllPost", controller = "Post"}. Executing action PomeloApi.Controllers.PostController.GetAllPost (PomeloApi)
+2018-11-08 09:16:22.405 +08:00 [INF] Executing action method PomeloApi.Controllers.PostController.GetAllPost (PomeloApi) - Validation state: "Valid"
+2018-11-08 09:16:22.630 +08:00 [INF] Entity Framework Core 2.1.1-rtm-30846 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-08 09:16:22.883 +08:00 [ERR] An error occurred using the connection to database 'world' on server 'localhost'.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'root'@'localhost' (using password: YES)
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 333
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 399
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 171
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+2018-11-08 09:16:23.024 +08:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'PomeloButter.Repository.MySQL.PomeloContext'.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'root'@'localhost' (using password: YES)
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 333
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 399
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 171
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'root'@'localhost' (using password: YES)
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 333
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 399
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 171
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2018-11-08 09:16:23.294 +08:00 [INF] Executed action PomeloApi.Controllers.PostController.GetAllPost (PomeloApi) in 1210.6801ms
+2018-11-08 09:16:23.300 +08:00 [ERR] Connection id "0HLI52T718JGJ", Request id "0HLI52T718JGJ:00000002": An unhandled exception was thrown by the application.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'root'@'localhost' (using password: YES)
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 333
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 399
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 171
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken)
+   at PomeloButter.Repository.BaseRepository`1.RetriveAllEntityAsync() in D:\MDA\PomeloButter\PomeloButter.Repository\MySQL\BaseRepository.cs:line 37
+   at PomeloButter.Business.PostBusiness.RetriveAllEntity() in D:\MDA\PomeloButter\PomeloButter.Business\PostBusiness.cs:line 57
+   at PomeloApi.Controllers.PostController.GetAllPost() in D:\MDA\PomeloButter\PomeloApi\Controllers\PostController.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2018-11-08 09:16:23.384 +08:00 [INF] Request finished in 1335.1688ms 500 
+2018-11-08 09:17:09.239 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/post  
+2018-11-08 09:17:09.246 +08:00 [INF] Request finished in 6.7926ms 307 
+2018-11-08 09:17:09.269 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/post  
+2018-11-08 09:17:09.273 +08:00 [INF] Route matched with {action = "GetAllPost", controller = "Post"}. Executing action PomeloApi.Controllers.PostController.GetAllPost (PomeloApi)
+2018-11-08 09:17:09.275 +08:00 [INF] Executing action method PomeloApi.Controllers.PostController.GetAllPost (PomeloApi) - Validation state: "Valid"
+2018-11-08 09:17:09.278 +08:00 [INF] Entity Framework Core 2.1.1-rtm-30846 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-08 09:17:09.289 +08:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'PomeloButter.Repository.MySQL.PomeloContext'.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 586
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 552
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 505
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 210
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 586
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 552
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 505
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 210
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2018-11-08 09:17:09.469 +08:00 [INF] Executed action PomeloApi.Controllers.PostController.GetAllPost (PomeloApi) in 194.84400000000002ms
+2018-11-08 09:17:09.473 +08:00 [ERR] Connection id "0HLI52T718JGJ", Request id "0HLI52T718JGJ:00000003": An unhandled exception was thrown by the application.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 586
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 552
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 505
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 210
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken)
+   at PomeloButter.Repository.BaseRepository`1.RetriveAllEntityAsync() in D:\MDA\PomeloButter\PomeloButter.Repository\MySQL\BaseRepository.cs:line 37
+   at PomeloButter.Business.PostBusiness.RetriveAllEntity() in D:\MDA\PomeloButter\PomeloButter.Business\PostBusiness.cs:line 57
+   at PomeloApi.Controllers.PostController.GetAllPost() in D:\MDA\PomeloButter\PomeloApi\Controllers\PostController.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2018-11-08 09:17:09.565 +08:00 [INF] Request finished in 295.4176ms 500 
+2018-11-08 09:30:43.585 +08:00 [INF] User profile is available. Using 'C:\Users\colin.ji\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-08 09:30:51.342 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/user  
+2018-11-08 09:30:51.381 +08:00 [INF] Request finished in 40.5746ms 307 
+2018-11-08 09:30:51.473 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/user  
+2018-11-08 09:30:51.625 +08:00 [INF] Route matched with {action = "GetAllUser", controller = "User"}. Executing action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi)
+2018-11-08 09:30:51.845 +08:00 [INF] Executing action method PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) - Validation state: "Valid"
+2018-11-08 09:30:52.035 +08:00 [INF] Entity Framework Core 2.1.1-rtm-30846 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-08 09:30:52.203 +08:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'PomeloButter.Repository.MySQL.PomeloContext'.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 586
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 552
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 505
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 210
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 586
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 552
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 505
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 210
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2018-11-08 09:30:52.416 +08:00 [INF] Executed action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) in 784.87700000000007ms
+2018-11-08 09:30:52.422 +08:00 [ERR] Connection id "0HLI5378PMUFM", Request id "0HLI5378PMUFM:00000001": An unhandled exception was thrown by the application.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 586
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 552
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 505
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 210
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken)
+   at PomeloButter.Repository.BaseRepository`1.RetriveAllEntityAsync() in D:\MDA\PomeloButter\PomeloButter.Repository\MySQL\BaseRepository.cs:line 37
+   at PomeloButter.Business.UserBusiness.RetriveAllEntity() in D:\MDA\PomeloButter\PomeloButter.Business\UserBusiness.cs:line 57
+   at PomeloApi.Controllers.UserController.GetAllUser() in D:\MDA\PomeloButter\PomeloApi\Controllers\UserController.cs:line 35
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2018-11-08 09:30:52.495 +08:00 [INF] Request finished in 1021.6906ms 500 
+2018-11-08 09:34:28.435 +08:00 [INF] User profile is available. Using 'C:\Users\colin.ji\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-08 09:35:10.996 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/user  
+2018-11-08 09:35:11.036 +08:00 [INF] Request finished in 40.8605ms 307 
+2018-11-08 09:35:11.132 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/user  
+2018-11-08 09:35:11.294 +08:00 [INF] Route matched with {action = "GetAllUser", controller = "User"}. Executing action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi)
+2018-11-08 09:35:11.442 +08:00 [INF] Executing action method PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) - Validation state: "Valid"
+2018-11-08 09:35:11.650 +08:00 [INF] Entity Framework Core 2.1.1-rtm-30846 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-08 09:35:11.825 +08:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'PomeloButter.Repository.MySQL.PomeloContext'.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 586
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 552
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 505
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 210
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 586
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 552
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 505
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 210
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2018-11-08 09:35:12.049 +08:00 [INF] Executed action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) in 750.1185ms
+2018-11-08 09:35:12.054 +08:00 [ERR] Connection id "0HLI539M5KFEJ", Request id "0HLI539M5KFEJ:00000001": An unhandled exception was thrown by the application.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 586
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 552
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 505
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 210
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken)
+   at PomeloButter.Repository.BaseRepository`1.RetriveAllEntityAsync() in D:\MDA\PomeloButter\PomeloButter.Repository\MySQL\BaseRepository.cs:line 37
+   at PomeloButter.Business.UserBusiness.RetriveAllEntity() in D:\MDA\PomeloButter\PomeloButter.Business\UserBusiness.cs:line 57
+   at PomeloApi.Controllers.UserController.GetAllUser() in D:\MDA\PomeloButter\PomeloApi\Controllers\UserController.cs:line 35
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2018-11-08 09:35:12.146 +08:00 [INF] Request finished in 1013.6292ms 500 
+2018-11-08 09:39:32.332 +08:00 [INF] User profile is available. Using 'C:\Users\colin.ji\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-08 09:39:39.408 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/user  
+2018-11-08 09:39:39.443 +08:00 [INF] Request finished in 36.7112ms 307 
+2018-11-08 09:39:39.551 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/user  
+2018-11-08 09:39:39.701 +08:00 [INF] Route matched with {action = "GetAllUser", controller = "User"}. Executing action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi)
+2018-11-08 09:39:39.845 +08:00 [INF] Executing action method PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) - Validation state: "Valid"
+2018-11-08 09:39:40.056 +08:00 [INF] Entity Framework Core 2.1.1-rtm-30846 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-08 09:39:40.240 +08:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'PomeloButter.Repository.MySQL.PomeloContext'.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 586
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 552
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 505
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 210
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 586
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 552
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 505
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 210
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2018-11-08 09:39:40.452 +08:00 [INF] Executed action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) in 745.5416ms
+2018-11-08 09:39:40.457 +08:00 [ERR] Connection id "0HLI53C65MBBC", Request id "0HLI53C65MBBC:00000001": An unhandled exception was thrown by the application.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 586
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 552
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 505
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 210
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken)
+   at PomeloButter.Repository.BaseRepository`1.RetriveAllEntityAsync() in D:\MDA\PomeloButter\PomeloButter.Repository\MySQL\BaseRepository.cs:line 37
+   at PomeloButter.Business.UserBusiness.RetriveAllEntity() in D:\MDA\PomeloButter\PomeloButter.Business\UserBusiness.cs:line 57
+   at PomeloApi.Controllers.UserController.GetAllUser() in D:\MDA\PomeloButter\PomeloApi\Controllers\UserController.cs:line 35
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2018-11-08 09:39:40.533 +08:00 [INF] Request finished in 982.3838ms 500 
+2018-11-08 09:42:08.421 +08:00 [INF] User profile is available. Using 'C:\Users\colin.ji\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-08 09:42:12.923 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/user  
+2018-11-08 09:42:12.959 +08:00 [INF] Request finished in 37.3804ms 307 
+2018-11-08 09:42:13.046 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/user  
+2018-11-08 09:42:13.193 +08:00 [INF] Route matched with {action = "GetAllUser", controller = "User"}. Executing action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi)
+2018-11-08 09:42:13.505 +08:00 [INF] Executing action method PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) - Validation state: "Valid"
+2018-11-08 09:42:14.020 +08:00 [INF] Entity Framework Core 2.1.2-rtm-30932 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-08 09:42:14.330 +08:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'PomeloButter.Repository.MySQL.PomeloContext'.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 630
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 596
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 511
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 215
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 630
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 596
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 511
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 215
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2018-11-08 09:42:14.527 +08:00 [INF] Executed action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) in 1329.8082000000002ms
+2018-11-08 09:42:14.535 +08:00 [ERR] Connection id "0HLI53DJTM6I3", Request id "0HLI53DJTM6I3:00000001": An unhandled exception was thrown by the application.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 630
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 596
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 511
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 215
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken)
+   at PomeloButter.Repository.BaseRepository`1.RetriveAllEntityAsync() in D:\MDA\PomeloButter\PomeloButter.Repository\MySQL\BaseRepository.cs:line 37
+   at PomeloButter.Business.UserBusiness.RetriveAllEntity() in D:\MDA\PomeloButter\PomeloButter.Business\UserBusiness.cs:line 57
+   at PomeloApi.Controllers.UserController.GetAllUser() in D:\MDA\PomeloButter\PomeloApi\Controllers\UserController.cs:line 35
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2018-11-08 09:42:14.611 +08:00 [INF] Request finished in 1565.2943ms 500 
+2018-11-08 09:43:46.445 +08:00 [INF] User profile is available. Using 'C:\Users\colin.ji\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-08 09:43:49.941 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/user  
+2018-11-08 09:43:49.979 +08:00 [INF] Request finished in 38.8279ms 307 
+2018-11-08 09:43:50.081 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/user  
+2018-11-08 09:43:50.226 +08:00 [INF] Route matched with {action = "GetAllUser", controller = "User"}. Executing action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi)
+2018-11-08 09:43:50.448 +08:00 [INF] Executing action method PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) - Validation state: "Valid"
+2018-11-08 09:43:50.950 +08:00 [INF] Entity Framework Core 2.1.2-rtm-30932 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-08 09:43:51.259 +08:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'PomeloButter.Repository.MySQL.PomeloContext'.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 630
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 596
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 511
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 215
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 630
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 596
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 511
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 215
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2018-11-08 09:43:51.460 +08:00 [INF] Executed action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) in 1229.8547ms
+2018-11-08 09:43:51.468 +08:00 [ERR] Connection id "0HLI53EGQV2N6", Request id "0HLI53EGQV2N6:00000001": An unhandled exception was thrown by the application.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 630
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 596
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 511
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 215
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken)
+   at PomeloButter.Repository.BaseRepository`1.RetriveAllEntityAsync() in D:\MDA\PomeloButter\PomeloButter.Repository\MySQL\BaseRepository.cs:line 37
+   at PomeloButter.Business.UserBusiness.RetriveAllEntity() in D:\MDA\PomeloButter\PomeloButter.Business\UserBusiness.cs:line 57
+   at PomeloApi.Controllers.UserController.GetAllUser() in D:\MDA\PomeloButter\PomeloApi\Controllers\UserController.cs:line 35
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2018-11-08 09:43:51.543 +08:00 [INF] Request finished in 1462.1652ms 500 
+2018-11-08 09:46:13.194 +08:00 [INF] User profile is available. Using 'C:\Users\colin.ji\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-08 09:46:18.163 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/user  
+2018-11-08 09:46:18.199 +08:00 [INF] Request finished in 38.1638ms 307 
+2018-11-08 09:46:18.284 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/user  
+2018-11-08 09:46:18.427 +08:00 [INF] Route matched with {action = "GetAllUser", controller = "User"}. Executing action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi)
+2018-11-08 09:46:18.637 +08:00 [INF] Executing action method PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) - Validation state: "Valid"
+2018-11-08 09:46:19.142 +08:00 [INF] Entity Framework Core 2.1.2-rtm-30932 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-08 09:46:19.452 +08:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'PomeloButter.Repository.MySQL.PomeloContext'.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 630
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 596
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 511
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 215
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 630
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 596
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 511
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 215
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2018-11-08 09:46:19.656 +08:00 [INF] Executed action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) in 1224.5256000000002ms
+2018-11-08 09:46:19.661 +08:00 [ERR] Connection id "0HLI53FT0F1LU", Request id "0HLI53FT0F1LU:00000001": An unhandled exception was thrown by the application.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToUInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.ChangeType(Object objectValue) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 630
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption`1.GetValue(MySqlConnectionStringBuilder builder) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 596
+   at MySqlConnector.Core.ConnectionSettings..ctor(MySqlConnectionStringBuilder csb) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionSettings.cs:line 35
+   at MySql.Data.MySqlClient.MySqlConnection.GetConnectionSettings() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 511
+   at MySql.Data.MySqlClient.MySqlConnection.get_Database() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 215
+   at Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError(IDiagnosticsLogger`1 diagnostics, IRelationalConnection connection, Exception exception, DateTimeOffset startTime, TimeSpan duration, Boolean async, Boolean logErrorAsDebug)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken)
+   at PomeloButter.Repository.BaseRepository`1.RetriveAllEntityAsync() in D:\MDA\PomeloButter\PomeloButter.Repository\MySQL\BaseRepository.cs:line 37
+   at PomeloButter.Business.UserBusiness.RetriveAllEntity() in D:\MDA\PomeloButter\PomeloButter.Business\UserBusiness.cs:line 57
+   at PomeloApi.Controllers.UserController.GetAllUser() in D:\MDA\PomeloButter\PomeloApi\Controllers\UserController.cs:line 35
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2018-11-08 09:46:19.740 +08:00 [INF] Request finished in 1455.9738ms 500 
+2018-11-08 09:48:40.959 +08:00 [INF] User profile is available. Using 'C:\Users\colin.ji\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-08 09:48:44.126 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/user  
+2018-11-08 09:48:44.163 +08:00 [INF] Request finished in 38.7182ms 307 
+2018-11-08 09:48:44.253 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/user  
+2018-11-08 09:48:44.394 +08:00 [INF] Route matched with {action = "GetAllUser", controller = "User"}. Executing action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi)
+2018-11-08 09:48:44.687 +08:00 [INF] Executing action method PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) - Validation state: "Valid"
+2018-11-08 09:48:45.191 +08:00 [INF] Entity Framework Core 2.1.2-rtm-30932 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-08 09:48:45.623 +08:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Birthday`, `u`.`Email`, `u`.`Gender`, `u`.`IsDeleted`, `u`.`Password`, `u`.`UserName`
+FROM `User` AS `u`
+2018-11-08 09:48:45.679 +08:00 [INF] Executed action method PomeloApi.Controllers.UserController.GetAllUser (PomeloApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 978.7757ms.
+2018-11-08 09:48:45.695 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PomeloButter.Model.TableModel.User, PomeloButter.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-08 09:48:45.714 +08:00 [INF] Executed action PomeloApi.Controllers.UserController.GetAllUser (PomeloApi) in 1313.3257ms
+2018-11-08 09:48:45.726 +08:00 [INF] Request finished in 1473.2015ms 200 application/json; charset=utf-8

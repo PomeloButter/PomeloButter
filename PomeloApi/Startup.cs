@@ -52,7 +52,8 @@ namespace PomeloApi
                 });
             services.AddDbContext<PomeloContext>(options => options.UseMySql(Configuration.GetConnectionString("mysqlConnection")));
             RepositoryInjection.ConfigureRepository(services);
-            BusinessInjection.ConfigureBusiness(services);          
+            BusinessInjection.ConfigureBusiness(services);
+            services.AddSingleton(Configuration);
             services.AddSwaggerGen(m =>
             {
                 m.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "PomeloButterApi", Version = "v1", Description = "Pomelo接口文档" });
@@ -88,7 +89,7 @@ namespace PomeloApi
                 c.RoutePrefix = "";
 
             });
-//            app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
             app.UseMvc();
         }
     }
