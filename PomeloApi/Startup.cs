@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -54,6 +55,7 @@ namespace PomeloApi
             RepositoryInjection.ConfigureRepository(services);
             BusinessInjection.ConfigureBusiness(services);
             services.AddSingleton(Configuration);
+
             services.AddSwaggerGen(m =>
             {
                 m.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "PomeloButterApi", Version = "v1", Description = "Pomelo接口文档" });
@@ -63,6 +65,8 @@ namespace PomeloApi
                 var xmlModelPath = Path.Combine(basePath, "PomeloButter.Model.xml");
                 m.IncludeXmlComments(xmlModelPath);
             });
+
+            services.AddAutoMapper();
         }
 
         /// <summary>

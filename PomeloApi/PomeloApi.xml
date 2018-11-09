@@ -9,12 +9,13 @@
             文章控制器
             </summary>
         </member>
-        <member name="M:PomeloApi.Controllers.PostController.#ctor(PomeloButter.IBusiness.IPostBusiness,Microsoft.Extensions.Logging.ILoggerFactory)">
+        <member name="M:PomeloApi.Controllers.PostController.#ctor(PomeloButter.IBusiness.IPostBusiness,Microsoft.Extensions.Logging.ILoggerFactory,AutoMapper.IMapper)">
             <summary>
                 构造函数注入服务
             </summary>
             <param name="postBusiness"></param>
             <param name="loggerFactory"></param>
+            <param name="mapper"></param>
         </member>
         <member name="M:PomeloApi.Controllers.PostController.GetAllPost">
             <summary>
@@ -80,6 +81,16 @@
             <param name="app"></param>
             <param name="loggerFactory"></param>
         </member>
+        <member name="T:PomeloApi.Extensions.MappingProfile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PomeloApi.Extensions.MappingProfile.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:PomeloApi.Program">
             <summary>
             
@@ -127,6 +138,31 @@
             <param name="app"></param>
             <param name="env"></param>
             <param name="loggerFactory"></param>
+        </member>
+        <member name="T:PomeloApi.ViewModel.PostModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PomeloApi.ViewModel.PostModel.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:PomeloApi.ViewModel.PostModel.Body">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:PomeloApi.ViewModel.PostModel.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:PomeloApi.ViewModel.PostModel.UpdateTime">
+            <summary>
+            
+            </summary>
         </member>
     </members>
 </doc>
