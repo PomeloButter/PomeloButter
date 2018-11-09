@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using FluentValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -15,6 +16,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using PomeloApi.Extensions;
+using PomeloApi.Validation;
+using PomeloApi.ViewModel;
 using PomeloButter.DependencyInjection;
 using PomeloButter.Repository.MySQL;
 
@@ -67,6 +70,8 @@ namespace PomeloApi
             });
 
             services.AddAutoMapper();
+           
+            services.AddTransient<IValidator<PostModel>, PostModelValidator>();
         }
 
         /// <summary>

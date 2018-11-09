@@ -139,6 +139,16 @@
             <param name="env"></param>
             <param name="loggerFactory"></param>
         </member>
+        <member name="T:PomeloApi.Validation.PostModelValidator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PomeloApi.Validation.PostModelValidator.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:PomeloApi.ViewModel.PostModel">
             <summary>
             
