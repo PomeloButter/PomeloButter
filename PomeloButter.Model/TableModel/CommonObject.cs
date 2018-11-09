@@ -5,7 +5,7 @@ namespace PomeloButter.Model.TableModel
     /// <summary>
     /// 
     /// </summary>
-    public class CommonObject
+    public class CommonObject:IEntity
     {
         /// <summary>
         /// 主键Id

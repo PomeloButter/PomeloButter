@@ -61,12 +61,7 @@ namespace PomeloApi
 
             services.AddSwaggerGen(m =>
             {
-                m.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "PomeloButterApi", Version = "v1", Description = "Pomelo接口文档" });
-                var basePath = Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath;
-                var xmlPath = Path.Combine(basePath, "PomeloApi.xml");
-                m.IncludeXmlComments(xmlPath, true);
-                var xmlModelPath = Path.Combine(basePath, "PomeloButter.Model.xml");
-                m.IncludeXmlComments(xmlModelPath);
+                m.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "PomeloButterApi", Version = "v1", Description = "Pomelo接口文档" });             
             });
 
             services.AddAutoMapper();
