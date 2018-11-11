@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PomeloButter.IBusiness;
+using PomeloButter.Model.EntityParameters;
 using PomeloButter.Model.TableModel;
 
 namespace PomeloApi.Controllers
@@ -30,9 +31,9 @@ namespace PomeloApi.Controllers
         /// <returns></returns>
         [HttpGet]
         //[Route("AllUser")]
-        public async Task<IEnumerable<User>> GetAllUser()
+        public async Task<IEnumerable<User>> GetAllUser(UserParameter userParameter)
         {
-            return await _iUserBusiness.RetriveAllEntity();
+            return await _iUserBusiness.RetriveAllEntity(userParameter);
         }
 
         /// <summary>

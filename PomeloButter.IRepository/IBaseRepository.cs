@@ -28,13 +28,6 @@ namespace PomeloButter.IRepository
         /// <param name="id">主键Id</param>
         /// <returns></returns>
         Task<T> RetriveOneEntityById(string id);
-
-        /// <summary>
-        /// 获取所有实体
-        /// </summary>
-        /// <returns></returns>
-        Task <IEnumerable<T>> RetriveAllEntityAsync();
-
         /// <summary>
         /// 修改一个实体
         /// </summary>

@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -65,8 +67,16 @@ namespace PomeloApi
             });
 
             services.AddAutoMapper();
-           
-            services.AddTransient<IValidator<PostModel>, PostModelValidator>();
+                                 
+            BaseValidator.ConfigureEntityValidator(services);
+
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+            services.AddScoped<IUrlHelper>(options =>
+            {
+                var actionContext = options.GetService<IActionContextAccessor>().ActionContext;
+                return new UrlHelper(actionContext);
+            });
+            
         }
 
         /// <summary>
@@ -93,7 +103,7 @@ namespace PomeloApi
                 c.RoutePrefix = "";
 
             });
-            app.UseHttpsRedirection();
+           // app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

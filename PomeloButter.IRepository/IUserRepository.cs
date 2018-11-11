@@ -1,4 +1,7 @@
-﻿using PomeloButter.Model.TableModel;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using PomeloButter.Model.EntityParameters;
+using PomeloButter.Model.TableModel;
 
 namespace PomeloButter.IRepository
 {
@@ -7,5 +10,6 @@ namespace PomeloButter.IRepository
     /// </summary>
     public interface IUserRepository : IBaseRepository<User>
     {
+        Task<IEnumerable<User>> RetriveAllEntityAsync(UserParameter userParameter);
     }
 }

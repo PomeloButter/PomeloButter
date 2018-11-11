@@ -1,5 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using PomeloButter.IRepository;
+using PomeloButter.Model.EntityParameters;
+using PomeloButter.Model.Pager;
 using PomeloButter.Model.TableModel;
 
 namespace PomeloButter.Repository.MySQL
@@ -15,6 +20,15 @@ namespace PomeloButter.Repository.MySQL
         {
             _context = context;
         }
-   
-    }
+
+        public  async Task<PaginatedList<Post>> RetriveAllEntityAsync(PostParameter postParameter)
+        {
+            var query = _context.Post.OrderBy(p => p.Id);
+            var count = await query.CountAsync();
+            var data= await query.Skip(postParameter.PageIndex * postParameter.PageSize)
+                .Take(postParameter.PageSize)
+                .ToListAsync();
+            return new PaginatedList<Post>(postParameter.PageIndex,postParameter.PageSize,count,data);
+        }
+    } 
 }

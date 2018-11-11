@@ -2,6 +2,8 @@
 using System.Threading.Tasks;
 using PomeloButter.IBusiness;
 using PomeloButter.IRepository;
+using PomeloButter.Model.EntityParameters;
+using PomeloButter.Model.Pager;
 using PomeloButter.Model.TableModel;
 
 namespace PomeloButter.Business
@@ -52,9 +54,9 @@ namespace PomeloButter.Business
         ///     获取所有文章
         /// </summary>
         /// <returns></returns>
-        public async Task<IEnumerable<Post>> RetriveAllEntity()
+        public async Task<PaginatedList<Post>> RetriveAllEntity(PostParameter postParameter)
         {
-            return await _iPostRepository.RetriveAllEntityAsync();
+            return await _iPostRepository.RetriveAllEntityAsync(postParameter);
         }
 
         /// <summary>

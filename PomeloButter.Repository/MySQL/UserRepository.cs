@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using PomeloButter.IRepository;
+using PomeloButter.Model.EntityParameters;
 using PomeloButter.Model.TableModel;
 
 namespace PomeloButter.Repository.MySQL
@@ -15,6 +17,10 @@ namespace PomeloButter.Repository.MySQL
         {
             _context = context;
         }
-   
+
+        public Task<IEnumerable<User>> RetriveAllEntityAsync(UserParameter userParameter)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
