@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
-using PomeloApi.ViewModel;
 using PomeloButter.IRepository;
+using PomeloButter.Model.ViewModel;
 using PomeloButter.Repository.MySQL;
 
 namespace PomeloApi.Validation

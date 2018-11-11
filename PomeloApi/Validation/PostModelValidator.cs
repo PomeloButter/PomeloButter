@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
-using PomeloApi.ViewModel;
+using PomeloButter.Model.ViewModel;
+
 
 namespace PomeloApi.Validation
 {

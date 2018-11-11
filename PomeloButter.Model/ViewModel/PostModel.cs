@@ -1,11 +1,8 @@
 ﻿using System;
 using PomeloButter.Model.TableModel;
 
-namespace PomeloApi.ViewModel
+namespace PomeloButter.Model.ViewModel
 {
-    /// <summary>
-    /// 
-    /// </summary>
     public class PostModel:CommonObject
     {
         /// <summary>
@@ -24,5 +21,6 @@ namespace PomeloApi.ViewModel
         /// 
         /// </summary>
         public DateTime UpdateTime { get; set; }
+
     }
 }

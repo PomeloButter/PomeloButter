@@ -19,7 +19,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using PomeloApi.Extensions;
 using PomeloApi.Validation;
-using PomeloApi.ViewModel;
 using PomeloButter.DependencyInjection;
 using PomeloButter.Repository.MySQL;
 
@@ -60,6 +59,7 @@ namespace PomeloApi
             RepositoryInjection.ConfigureRepository(services);
             BusinessInjection.ConfigureBusiness(services);
             services.AddSingleton(Configuration);
+            PropertyMappingInjection.MappingInjection(services);
 
             services.AddSwaggerGen(m =>
             {

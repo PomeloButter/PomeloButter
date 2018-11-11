@@ -5,6 +5,9 @@ using PomeloButter.IRepository;
 using PomeloButter.Model.EntityParameters;
 using PomeloButter.Model.Pager;
 using PomeloButter.Model.TableModel;
+using PomeloButter.Model.ViewModel;
+using PomeloButter.Repository.Extensions;
+using PomeloButter.Repository.PropertyMapping;
 
 namespace PomeloButter.Repository.MySQL
 {
@@ -14,10 +17,12 @@ namespace PomeloButter.Repository.MySQL
     public class PostRepository : BaseRepository<Post>, IPostRepository
     {
         private readonly PomeloContext _context;
+        private readonly IPropertyMappingContainer _propertyMappingContainer;
 
-        public PostRepository(PomeloContext context) : base(context)
+        public PostRepository(PomeloContext context,IPropertyMappingContainer propertyMappingContainer) : base(context)
         {
             _context = context;
+            _propertyMappingContainer = propertyMappingContainer;
         }
 
         public async Task<PaginatedList<Post>> RetriveAllEntityAsync(PostParameter postParameter)
@@ -29,7 +34,7 @@ namespace PomeloButter.Repository.MySQL
                 query = query.Where(p => p.Title.ToLowerInvariant()==title);
             }
 
-            query = query.OrderBy(p => p.Id);
+            query = query.ApplySort(postParameter.OrderBy, _propertyMappingContainer.Resolve<PostModel, Post>());
             var count = await query.CountAsync();
             var data = await query.Skip(postParameter.PageIndex * postParameter.PageSize)
                 .Take(postParameter.PageSize)

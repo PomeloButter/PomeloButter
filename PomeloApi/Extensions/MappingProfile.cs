@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using PomeloApi.ViewModel;
 using PomeloButter.Model.TableModel;
+using PomeloButter.Model.ViewModel;
 
 namespace PomeloApi.Extensions
 {

@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using PomeloApi.ViewModel;
 using PomeloButter.IBusiness;
 using PomeloButter.Model.EntityParameters;
 using PomeloButter.Model.Pager;
 using PomeloButter.Model.TableModel;
+using PomeloButter.Model.ViewModel;
 
 namespace PomeloApi.Controllers
 {
