@@ -142,3 +142,199 @@ Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Invalid reques
 2018-11-11 21:04:06.650 +08:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/post multipart/form-data; boundary=--------------------------366118340880122163689949 415
 2018-11-11 21:04:06.659 +08:00 [INF] Request finished in 8.7279ms 307 
 2018-11-11 21:04:06.663 +08:00 [INF] Connection id "0HLI7QNNHE007", Request id "0HLI7QNNHE007:00000001": the application completed without reading the entire request body.
+2018-11-11 21:04:32.551 +08:00 [INF] User profile is available. Using 'C:\Users\pomelo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-11 21:04:33.527 +08:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.ProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__51_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionAdapter.InnerOnConnectionAsync(ConnectionAdapterContext context)
+2018-11-11 21:04:34.222 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/index.html  
+2018-11-11 21:04:34.257 +08:00 [INF] Request finished in 35.5079ms 200 text/html
+2018-11-11 21:04:34.581 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2018-11-11 21:04:34.838 +08:00 [INF] Request finished in 256.9662ms 200 application/json;charset=utf-8
+2018-11-11 21:04:39.772 +08:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/post multipart/form-data; boundary=--------------------------924679064311860346169629 415
+2018-11-11 21:04:39.842 +08:00 [INF] Request finished in 70.697ms 404 
+2018-11-11 21:04:39.860 +08:00 [INF] Connection id "0HLI7QOSPNQ3P", Request id "0HLI7QOSPNQ3P:00000001": the application completed without reading the entire request body.
+2018-11-11 21:04:48.253 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/post  
+2018-11-11 21:04:48.289 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PomeloApi.Controllers.PostController.Get (PomeloApi)
+2018-11-11 21:04:48.540 +08:00 [INF] Executing action method PomeloApi.Controllers.PostController.Get (PomeloApi) with arguments (["PomeloButter.Model.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2018-11-11 21:04:51.097 +08:00 [INF] Entity Framework Core 2.1.2-rtm-30932 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-11 21:04:51.667 +08:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2018-11-11 21:04:51.923 +08:00 [INF] Executed DbCommand (23ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`IsDeleted`, `p`.`LastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2018-11-11 21:04:52.096 +08:00 [INF] Executed action method PomeloApi.Controllers.PostController.Get (PomeloApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3532.4257000000002ms.
+2018-11-11 21:04:52.116 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PomeloApi.ViewModel.PostModel, PomeloApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-11 21:04:52.143 +08:00 [INF] Executed action PomeloApi.Controllers.PostController.Get (PomeloApi) in 3847.0861ms
+2018-11-11 21:04:52.155 +08:00 [INF] Request finished in 3902.2311ms 200 application/json; charset=utf-8
+2018-11-11 21:05:43.787 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/post?pageindex=1&pagesize=2  
+2018-11-11 21:05:43.792 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PomeloApi.Controllers.PostController.Get (PomeloApi)
+2018-11-11 21:05:43.830 +08:00 [INF] Executing action method PomeloApi.Controllers.PostController.Get (PomeloApi) with arguments (["PomeloButter.Model.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2018-11-11 21:05:46.025 +08:00 [INF] Entity Framework Core 2.1.2-rtm-30932 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-11 21:05:46.072 +08:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2018-11-11 21:05:46.086 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`IsDeleted`, `p`.`LastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2018-11-11 21:05:46.204 +08:00 [INF] Executed action method PomeloApi.Controllers.PostController.Get (PomeloApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2362.6502ms.
+2018-11-11 21:05:46.207 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PomeloApi.ViewModel.PostModel, PomeloApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-11 21:05:46.210 +08:00 [INF] Executed action PomeloApi.Controllers.PostController.Get (PomeloApi) in 2413.4452ms
+2018-11-11 21:05:46.213 +08:00 [INF] Request finished in 2425.8763ms 200 application/json; charset=utf-8
+2018-11-11 21:06:05.503 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/post?pageindex=0&pagesize=2  
+2018-11-11 21:06:05.506 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PomeloApi.Controllers.PostController.Get (PomeloApi)
+2018-11-11 21:06:05.510 +08:00 [INF] Executing action method PomeloApi.Controllers.PostController.Get (PomeloApi) with arguments (["PomeloButter.Model.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2018-11-11 21:06:08.248 +08:00 [INF] Entity Framework Core 2.1.2-rtm-30932 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-11 21:06:08.275 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2018-11-11 21:06:08.285 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`IsDeleted`, `p`.`LastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2018-11-11 21:06:08.294 +08:00 [INF] Executed action method PomeloApi.Controllers.PostController.Get (PomeloApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2775.3388ms.
+2018-11-11 21:06:08.299 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PomeloApi.ViewModel.PostModel, PomeloApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-11 21:06:08.302 +08:00 [INF] Executed action PomeloApi.Controllers.PostController.Get (PomeloApi) in 2792.9445ms
+2018-11-11 21:06:08.304 +08:00 [INF] Request finished in 2801.9515ms 200 application/json; charset=utf-8
+2018-11-11 21:17:21.154 +08:00 [INF] User profile is available. Using 'C:\Users\pomelo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-11 21:17:22.213 +08:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.ProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__51_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionAdapter.InnerOnConnectionAsync(ConnectionAdapterContext context)
+2018-11-11 21:17:22.213 +08:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.ProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__51_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionAdapter.InnerOnConnectionAsync(ConnectionAdapterContext context)
+2018-11-11 21:17:22.902 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/index.html  
+2018-11-11 21:17:22.938 +08:00 [INF] Request finished in 37.1016ms 200 text/html
+2018-11-11 21:17:23.190 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2018-11-11 21:17:23.441 +08:00 [INF] Request finished in 251.0373ms 200 application/json;charset=utf-8
+2018-11-11 21:17:57.785 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/post?pageindex=0&pagesize=2&title=1  
+2018-11-11 21:17:57.877 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PomeloApi.Controllers.PostController.Get (PomeloApi)
+2018-11-11 21:17:58.121 +08:00 [INF] Executing action method PomeloApi.Controllers.PostController.Get (PomeloApi) with arguments (["PomeloButter.Model.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2018-11-11 21:18:09.125 +08:00 [INF] Entity Framework Core 2.1.2-rtm-30932 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-11 21:18:09.763 +08:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2018-11-11 21:18:10.050 +08:00 [INF] Executed DbCommand (36ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`IsDeleted`, `p`.`LastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2018-11-11 21:18:28.361 +08:00 [INF] Executed action method PomeloApi.Controllers.PostController.Get (PomeloApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30217.2651ms.
+2018-11-11 21:18:28.380 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PomeloApi.ViewModel.PostModel, PomeloApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-11 21:18:28.406 +08:00 [INF] Executed action PomeloApi.Controllers.PostController.Get (PomeloApi) in 30522.0073ms
+2018-11-11 21:18:28.422 +08:00 [INF] Request finished in 30642.7357ms 200 application/json; charset=utf-8
+2018-11-11 21:18:43.721 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/post?pageindex=0&pagesize=2&title=1  
+2018-11-11 21:18:43.724 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PomeloApi.Controllers.PostController.Get (PomeloApi)
+2018-11-11 21:18:43.730 +08:00 [INF] Executing action method PomeloApi.Controllers.PostController.Get (PomeloApi) with arguments (["PomeloButter.Model.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2018-11-11 21:18:58.011 +08:00 [INF] Entity Framework Core 2.1.2-rtm-30932 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-11 21:19:31.799 +08:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2018-11-11 21:20:47.903 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`IsDeleted`, `p`.`LastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2018-11-11 21:20:47.914 +08:00 [INF] Executed action method PomeloApi.Controllers.PostController.Get (PomeloApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 124177.06520000001ms.
+2018-11-11 21:20:47.917 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PomeloApi.ViewModel.PostModel, PomeloApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-11 21:20:47.926 +08:00 [INF] Executed action PomeloApi.Controllers.PostController.Get (PomeloApi) in 124199.1547ms
+2018-11-11 21:20:47.929 +08:00 [INF] Request finished in 124208.2142ms 200 application/json; charset=utf-8
+2018-11-11 21:21:06.386 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/post?pageindex=0&pagesize=2&title=1  
+2018-11-11 21:21:06.393 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PomeloApi.Controllers.PostController.Get (PomeloApi)
+2018-11-11 21:21:06.407 +08:00 [INF] Executing action method PomeloApi.Controllers.PostController.Get (PomeloApi) with arguments (["PomeloButter.Model.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2018-11-11 21:21:06.415 +08:00 [INF] Entity Framework Core 2.1.2-rtm-30932 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-11 21:21:06.441 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2018-11-11 21:21:06.468 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`IsDeleted`, `p`.`LastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2018-11-11 21:21:06.476 +08:00 [INF] Executed action method PomeloApi.Controllers.PostController.Get (PomeloApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 61.5942ms.
+2018-11-11 21:21:06.489 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PomeloApi.ViewModel.PostModel, PomeloApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-11 21:21:06.494 +08:00 [INF] Executed action PomeloApi.Controllers.PostController.Get (PomeloApi) in 87.951000000000008ms
+2018-11-11 21:21:06.495 +08:00 [INF] Request finished in 109.4952ms 200 application/json; charset=utf-8
+2018-11-11 21:22:53.471 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/post?pageindex=0&pagesize=2&title=%222%22  
+2018-11-11 21:22:53.474 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PomeloApi.Controllers.PostController.Get (PomeloApi)
+2018-11-11 21:22:53.479 +08:00 [INF] Executing action method PomeloApi.Controllers.PostController.Get (PomeloApi) with arguments (["PomeloButter.Model.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2018-11-11 21:22:53.491 +08:00 [INF] Entity Framework Core 2.1.2-rtm-30932 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-11 21:22:53.510 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2018-11-11 21:22:53.530 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`IsDeleted`, `p`.`LastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2018-11-11 21:22:53.537 +08:00 [INF] Executed action method PomeloApi.Controllers.PostController.Get (PomeloApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 46.1057ms.
+2018-11-11 21:22:53.539 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PomeloApi.ViewModel.PostModel, PomeloApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-11 21:22:53.550 +08:00 [INF] Executed action PomeloApi.Controllers.PostController.Get (PomeloApi) in 71.9781ms
+2018-11-11 21:22:53.552 +08:00 [INF] Request finished in 81.3817ms 200 application/json; charset=utf-8
+2018-11-11 21:25:10.609 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/post?pageindex=0&pagesize=2&Title=2  
+2018-11-11 21:25:10.611 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PomeloApi.Controllers.PostController.Get (PomeloApi)
+2018-11-11 21:25:10.616 +08:00 [INF] Executing action method PomeloApi.Controllers.PostController.Get (PomeloApi) with arguments (["PomeloButter.Model.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2018-11-11 21:25:10.633 +08:00 [INF] Entity Framework Core 2.1.2-rtm-30932 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-11 21:25:10.659 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2018-11-11 21:25:10.676 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`IsDeleted`, `p`.`LastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2018-11-11 21:25:10.685 +08:00 [INF] Executed action method PomeloApi.Controllers.PostController.Get (PomeloApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 52.8541ms.
+2018-11-11 21:25:10.694 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PomeloApi.ViewModel.PostModel, PomeloApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-11 21:25:10.697 +08:00 [INF] Executed action PomeloApi.Controllers.PostController.Get (PomeloApi) in 81.2278ms
+2018-11-11 21:25:10.706 +08:00 [INF] Request finished in 97.3923ms 200 application/json; charset=utf-8
+2018-11-11 21:25:20.164 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/post?pageindex=0&pagesize=3&Title=2  
+2018-11-11 21:25:20.167 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PomeloApi.Controllers.PostController.Get (PomeloApi)
+2018-11-11 21:25:20.176 +08:00 [INF] Executing action method PomeloApi.Controllers.PostController.Get (PomeloApi) with arguments (["PomeloButter.Model.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2018-11-11 21:25:20.183 +08:00 [INF] Entity Framework Core 2.1.2-rtm-30932 initialized 'PomeloContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2018-11-11 21:25:20.202 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2018-11-11 21:25:20.214 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`IsDeleted`, `p`.`LastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2018-11-11 21:25:20.227 +08:00 [INF] Executed action method PomeloApi.Controllers.PostController.Get (PomeloApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 44.748400000000004ms.
+2018-11-11 21:25:20.230 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PomeloApi.ViewModel.PostModel, PomeloApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-11 21:25:20.232 +08:00 [INF] Executed action PomeloApi.Controllers.PostController.Get (PomeloApi) in 56.814ms
+2018-11-11 21:25:20.235 +08:00 [INF] Request finished in 70.8069ms 200 application/json; charset=utf-8
