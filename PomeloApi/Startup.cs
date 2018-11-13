@@ -17,10 +17,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json.Serialization;
 using PomeloApi.Extensions;
 using PomeloApi.Validation;
 using PomeloButter.DependencyInjection;
 using PomeloButter.Repository.MySQL;
+using PomeloButter.Repository.TypeHelper;
+
 
 namespace PomeloApi
 {
@@ -49,7 +52,11 @@ namespace PomeloApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                .AddJsonOptions(option =>
+                {
+                    option.SerializerSettings.ContractResolver=new CamelCasePropertyNamesContractResolver();
+                });
             services.AddHttpsRedirection(option =>
                 {
                     option.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
@@ -69,7 +76,7 @@ namespace PomeloApi
             services.AddAutoMapper();
                                  
             BaseValidator.ConfigureEntityValidator(services);
-
+            services.AddTransient<ITypeHelperService, TypeHelperService>();
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
             services.AddScoped<IUrlHelper>(options =>
             {
